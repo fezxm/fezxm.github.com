@@ -1,0 +1,2463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+/*头部*/
+ .top_box{ height:516px; background:#000;} 
+ .top_img_box{ width:980px; margin:0 auto; position:relative;} 
+ .top_nav_pisture{ margin-left:-260px;}
+ .top_saerch_box{ position:absolute; top:7px; right:0;}
+ .search{ width:225px; height:30px; color:#fff; border: 1px solid #84868a; padding-left:5px; background:none; float:left;}
+ .search_i{ width:36px; height:30px; background:url(img/search_logo.png); border:1px solid #74ba11; float:left;}
+ .s_a1{ float:left; width:80px; height:32px; background:#4d8600; color:#fff; text-align:center; line-height:32px; position:relative; margin-left:19px;}
+ .s_a1 em{ width:7px; height:7px; position:absolute; background:url(img/xuebitu.png) no-repeat -39px 0; top:4px;right:3px;}
+ .serch_right_box{ float:left; line-height:32px; padding-left:34px;font-size:12px;}
+ .serch_right_box a{ color:#fff;}
+ .serch_right_box .a1{ padding-left:14px;}
+ .serch_right_box .a2{display:inline-block; margin-left:14px;}
+ .s_a2_i{ display:inline-block; background:url(img/xuebitu.png) no-repeat -49px 0; width:10px; height:5px; margin-left:4px; margin-bottom:2px;}
+ /*头部右侧栏*/
+ .top_right_siderbar{ width:247px; height:371px; background:url(img/site-focuslist_bg.png) no-repeat; position:absolute;right:-15px; top:27px;}
+ .r_s_li{height:34px; width:206px; padding-left:6px;}
+ .r_s_li:hover{ background:#699f00;}
+
+ .right_sidebar_ul{ margin-left:17px; margin-top:19px; border-radius:10px; overflow:hidden; width:212px;}
+ .siaderbar_a{ font-size:14px;}
+ /*头部nav*/
+ .nav_box{ width:980px; height:90px; border:1px solid #688a00; border-radius:10px; margin:0 auto; margin-top:8px;}
+ .nav_logo{ background:url(img/logo110x36_new.png) no-repeat; width:112px; height:42px; margin-top:18px; margin-left:18px;}
+ .nav_logo_a{ display:block; height:42px; width:112px; text-indent:-100em;}
+ .nav_logotext{ display:block; width:108px; height:14px; background:url(img/logoyxpz_new.png) no-repeat; margin-left:18px;}
+ .nav_logo_box{ width:126px; float:left;}
+ .nav_ul{ float:left; margin-left:20px;}
+ .nav_li{ float:left; padding-right:10px; padding-left:10px;}
+ .nav_li a{ color:#fff; font-size:13px; display:block; padding-top:10px;}
+ .nav_li_i{ float:left;height:75px; width:1px; background:url(img/xuebitu.png) no-repeat 0 -30px; margin-top:6px;}
+ .nav_li_a{ position:relative;color:#fff; font-size:14px; display:block; padding-top:7px;}
+ .nav_li a:hover{ color:#78a524;}
+ .nav_li_a_em{ width:7px; height:7px; display:block; background:url(img/xuebitu.png) no-repeat -39px -7px; top:4px;right:-7px; position:absolute;}
+ /*content*/
+ /*今日焦点*/
+  .today_focus_box{ width:980px; margin:0 auto; margin-top:25px;}
+  .focus_l{ float:left;width:380px;} 
+  .tody_logo{ height:42px; border-bottom: 2px solid #85ba4d;}
+  .tody_logo h3{ font-size:24px; color:#699f00;line-height:42px; width:140px;}
+  .today_logo_a{ font-size:14px; color:#699f00; padding-left:4px;}
+  .tody_logo_a{ float:right; width:66px; height:21px; border:1px solid #e9e9e9; border-radius:10px; padding-top:5px; margin-top:5px;}
+  .tody_logo_a i{ display:inline-block; width:14px; height:14px; background:url(img/xuebitu.png) no-repeat -62px 0; margin:2px 6px 0px 8px;}
+  .tody_p{ height:60px; line-height:60px; padding-left:6px;}
+  .tody_p a{ font-size:20px;}
+  .today_l_li{ height:32px;}
+  .today_l_li i{ width:6px; height:6px; display:inline-block; background:url(img/xuebitu.png) no-repeat -80px 0; padding-bottom:2px;}
+  .today_b_ul{ margin-left:-20px;}
+  .today_b_li{ width:180px; height:136px; border-bottom:1px solid #ebebeb; background:#f2f2f2; float:left; margin-left:20px;}
+  .today_b_li2{width:180px; height:136px; border-bottom:1px solid #ebebeb; background:#f2f2f2; float:left; margin-top:12px;}
+  .foucs_ul{ margin-top:-12px;}
+  .today_l_li a{ font-size:16px;}
+  .today_l_li a:hover{ color:#688a00;}
+  .today_b_li a{  display:block; font-size:12px;}
+  .foucs_c_box{ width:380px; margin-left:20px; float:left; position:relative;}
+  .foucs_ct_box{ position:relative; margin-bottom:25px;}
+  .f_ct_opa{ width:380px; height:40px; background:#000; opacity:0.4; filter:alpha( opacity:40); position:absolute; bottom:0; left:0;}
+  .f_ct_opa_i{ float:left;width:32px; height:27px; background:url(img/xuebitu.png) no-repeat -91px 0px; margin-left:7px; margin-right:12px;}
+  .foucs_ct_box p{ position:absolute; width:380px; height:40px; font-size:18px; bottom:-8px;}
+  .f_ct_opa_a{color:#fff;}
+  .foucs_r_box{ float:right; width:180px;}
+  /*综艺*/
+  .variety_bigbox{ width:980px; margin:0 auto; margin-top:42px;}
+  .variety_l_box{ width:780px; float:left;}
+  .variety_l_column{ height:40px;  border-bottom:2px solid #8ac024;}
+  .variety_column_i{ float:left; width:20px; height:27px; background:url(img/xuebitu.png) no-repeat -169px 0; margin-top:6px;}
+  .variety_l_column h3{ font-size:28px; color:#699f00; float:left; margin-top:6px;}
+  .z_c_h3_a{ float:left; margin-top:16px; margin-left:6px;color:#699f00;}
+  .va_l_c_li1{ float:left; margin-left:34px;}
+  .va_l_c_li{ float:left;}
+  .va_l_c_ul{ padding-top:16px;}
+  .va_c_i{ width:14px; height:14px; float:left; background:url(img/xuebitu.png) no-repeat -190px 0; margin:4px 6px 0px;}
+  .va_banner_img{ float:right;}
+  /*以上是栏目*/
+  .varity_b_lbox{ width:379px; height:325px; background:#f2f2f2; margin-top:25px; float:left;}
+  .v_b_limg{ position:relative;}
+  .v_l_b_i{ position:absolute; width:125px; height:45px; background:url(img/xuebitu.png) no-repeat -2px -34px; top:0;}
+  .vb_lbox_p1{ padding-left:6px; padding-top:10px}
+  .vb_lbox_p2{ color:#b499b4; font-size:12px; padding-left:6px; padding-top:8px;}
+  .v_l_b_em{ position:absolute; width:38px; height:38px; background:url(img/xuebitu.png) no-repeat -127px 0px; top:0; right:0;}
+  .v_l_b_opa{ width:54px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; bottom:0px; right:0;}
+  .v_l_b_time{width:54px; height:24px; bottom:0px; right:0; position:absolute; color:#fff;}
+  .vb_c_li{ width:180px; height:155px; border-bottom:1px solid #ebebeb; background:#f2f2f2; margin-bottom:15px; position:relative;}
+  .vb_c_ul{ float:left; width:180px; margin-left:20px; margin-top:25px; margin-bottom:-15px; overflow:hidden;}
+  .vb_c_li_a{margin-left:6px; display:inline-block; margin-top:5px;}
+  .vb_c_li_a:hover{ color:#6CF;}
+  .vb_c_li_p{ font-size:12px; color:#999;margin-left:6px; margin-top:7px;}
+  .v_l_c_opa{ width:54px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; bottom:54px; right:0;}
+  .v_l_c_time{width:54px; height:24px; bottom:50px; right:0; position:absolute; color:#fff;}
+  
+  .v_r_collom{ height:40px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+  .variety_r_box{ width:180px; float:right;}
+  .v_r_h3{ color:#699f00; font-size:22px; float:left; width:114px; margin-top:6px;}
+  .v_r_h3_a{ color:#699f00; font-size:12px; margin-top:12px; float:left;}
+  .var_r_dl{ width:180px; height:149px; background:#f2f2f2;}
+  .var_r_dt{ width:160xp; height:38px; border-bottom:1px dashed #ccc; margin:0 auto; line-height:38px; padding-left:8px;}
+  .var_dt_i{ float:left; width:6px; height:6px; background:url(img/xuebitu.png) no-repeat -80px 0px; margin:15px 6px 0px;}
+  .var_r_dd{height:30px; line-height:35px;}
+  /*娱乐*/
+  .happy_box{ width:980px; margin-top:42px;}
+  /*猜你喜欢*/
+  .guess_you_like{ margin-left:-20px;}
+  /*脱口秀*/
+  .mouse_show_ul{ width:980px;}
+  .mouse_show_lione{width:180px; height:155px; border-bottom:1px solid #ebebeb; background:#f2f2f2; position:relative; float:left;}
+  .mouse_show_li{width:180px; height:155px; border-bottom:1px solid #ebebeb; background:#f2f2f2; position:relative; float:left; margin-left:20px;}
+  .mouseshow_bigbox{width:980px; margin:0 auto; margin-top:-20px;}
+  /*电影*/
+  .movie_bigbox{ width:980px; margin:0 auto;}
+  .movie_r_box{ float:right; height:336px; width:180px;}
+  .movie_l_ul{ margin-top:15px; width:980px;}
+  .movie_l_ulone{ margin-left:-20px; margin-top:25px;}
+  .movie_left_li{ width:180px; height:271px; background:#f2f2f2; float:left; margin-left:20px;}
+  .movie_left_lione{width:180px; height:271px; background:#f2f2f2; float:left;}
+  .movie_left_li a{ float:left; line-height:34px; margin-left:4px;}
+  
+  .movie_r_i,.movie_r_i2,.movie_r_i3,.movie_r_i4,.movie_r_i5,.movie_r_i6,.movie_r_i7,.movie_r_i8{ float:left; width:20px; height:20px;background:url(img/xuebitu.png) no-repeat 0 -112px;}
+  .movie_r_i{background:url(img/xuebitu.png) no-repeat 0 -112px;}
+  .movie_r_i2{ background:url(img/xuebitu.png) no-repeat 0 -135px;}
+  .movie_r_i3{ background:url(img/xuebitu.png) no-repeat 0 -158px;}
+  .movie_r_i4{ background:url(img/xuebitu.png) no-repeat 0 -181px;}
+  .movie_r_i5{ background:url(img/xuebitu.png) no-repeat 0 -204px;}
+  .movie_r_i6{ background:url(img/xuebitu.png) no-repeat 0 -226px;}
+  .movie_r_i7{ background:url(img/xuebitu.png) no-repeat 0 -248px;}
+  .movie_r_i8{ background:url(img/xuebitu.png) no-repeat 0 -270px;}
+  .movie_r_em{ float:right; width:7px; height:2px; background:url(img/xuebitu.png) no-repeat -216px 0px; margin-top:8px;}
+  .movie_r_em2{float:right; width:7px; height:8px; background:url(img/xuebitu.png) no-repeat -206px 0px; margin-top:6px;}
+  .movie_r_li a{ float:left;padding-left:5px;}
+  .movie_r_li{ line-height:20px; height:20px; margin-top:16px;}
+  /*微电影*/
+  .small_movie_box{ width:980px; margin:0 auto;}
+  .smallmovie_l_column{ height:40px; border-bottom:1px solid #e1e1e1; width:580px;}
+  .smallmovie_l_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px;}
+  .smallmovie_lbox{ width:580px; float:left;}
+  .smallmovie_lul{ padding-top:16px;}
+  .smallmovie_rbox{ width:380px; float:right;}
+  .smallmovie_r_column{height:40px; border-bottom:1px solid #e1e1e1; width:380px;}
+  .smallmovie_r_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px;}
+  /*电视剧*/
+  
+  
+  /*动漫*/
+  .animation_b_lbox{width:379px; height:288px; background:#f2f2f2; margin-top:25px; float:left; position:relative;}
+  .animation_l_box{width:580px; float:left;}
+  .animation_l_column{height:40px;  border-bottom:2px solid #8ac024;}
+  .animation_l_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px;}
+  .animation_r_box{ width:180px; float:left; margin-left:20px;}
+  .animation_c_ul{float:left; width:180xp; }
+  /*音乐体育时尚*/
+  .sport_l_box{width:380px; float:left;}
+  .sport_l_column{height:40px;  border-bottom:2px solid #8ac024;}
+  .sport_l_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px; }
+  .sport_l_ul{float:left; width:180xp; margin-left:20px; margin-top:-15px;}
+  .sport_margin{ margin-left:-20px; margin-top:25px;}
+  .muice_c_box{width:380px; float:left; margin-left:20px;}
+  .muice_b_lbox{ width:180px; height:287px; background:#f2f2f2; float:left; margin-left:20px;}
+  .muice_margin_box{ margin-left:-20px; margin-top:25px;}
+  .mucie_img_a{ display:block; margin-top:18px; margin-left:6px;}
+  .vb_c_li2{ height:136px; background:#f2f2f2; margin-top:15px; position:relative;}
+  .v_b_limg2{ height:}
+  .v_l_c_opa2{ width:54px; height:24px; background:#000; opacity:0.4; filter:alpha(opacity:40); position:absolute; bottom:34px; right:0;}
+  .v_l_c_time2{width:54px; height:24px; bottom:30px; right:0; position:absolute; color:#fff;}
+  .sport_c_li{height:136px; background:#f2f2f2; margin-top:15px; position:relative;}
+  .sport_c_ul{float:left; width:180px; margin-top:-15px;}
+  .vb_c_ul2{float:left; width:180px; margin-left:20px; margin-top:10px;  overflow:hidden;}
+  /*母婴生活旅游*/
+  /*母婴*/
+  .baby_ul{ margin-left:-20px; margin-top:25px;}
+  .baby_li{ width:180px; height:136px; background:#f2f2f2; float:left; margin-left:20px; position:relative;}
+  .baby_a{ display:block; margin-left:6px; margin-top:8px;}
+  .baby_a:hover{ color:#6CC;}
+  .p1080{ position:absolute; width:39px; height:39px; background:url(img/xuebitu.png) no-repeat -227px 0px; right:0; top:0px;}
+ /*纪录片*/
+ .war_r_column{height:40px;  border-bottom:2px solid #8ac024; width:380px; float:right; margin-bottom:25px;}
+ .war_r_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px;}
+ /*原创达人*/
+ .diy_ul{ width:180px; height:317px; background:#f2f2f2; padding-left:8px; padding-top:10px; margin-bottom:-20px;}
+ .diy_li{ margin-bottom:20px;}
+ .diy_li_div{ float:left; margin-left:8px;}
+ .diy_img{ float:left;}
+ .diy_read{ display:block; width:62px; height:24px; background:#699f00; border-radius:6px; text-align:center; line-height:24px; color:#fff; margin-top:10px;}
+ /*搞笑*/
+ .laugh_l_column{height:40px;  border-bottom:1px solid #e1e1e1;}
+ .laugh_l_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px;}
+ .laugh_r_column{height:40px;  border-bottom:1px solid #e1e1e1; width:380px; float:right; margin-bottom:25px;}
+ .laugh_r_column h3{font-size:28px; color:#699f00; float:left; margin-top:6px;}
+ /*搞笑下方*/
+ .last_nav_box{ width:980px; margin:0 auto; margin-top:45px;}
+ .last_li{ width:180px; height:140px; position:relative; float:left; margin-left:20px;}
+ .last_ul{ margin-left:-20px;}
+ .last_b_a{ display:block; width:158px; height:32px; background:#8ac024; border-bottom:5px solid #6ba400; font-size:22px; color:#fff; padding-left:22px; padding-top:7px;}
+ .last_b_a span{ font-size:12px; color:#fff;}
+ .last_opa{ width:180px; height:24px; background:#000; opacity:0.4; filter:alpha( opacity:40); position:absolute; top:77px;}
+ .last_opa_p{ color:#fff; position:absolute; top:80px; padding-left:4px;}
+ /*底部友情链接*/
+ .frendlink_box{ width:980px; height:184px; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; background:#f7f7f7; margin:0 auto; margin-top:26px;}
+ .frendlinke_h3{ font-size:26px; font-weight:bold; }
+ .frendlinke_h3 a{ font-size:14px; padding-left:4px;}
+ .frend_l_box{ width:469px; height:162px; border-left:1px solid #e7e7e7; padding-left:20px; padding-top:22px;float:left;}
+ .frend_li{ float:left; padding-right:16px; padding-top:14px;}
+ .frend_ul{ width:362px;}
+ /*页脚*/
+ .footer_bigbox{ width:980px; height:173px; border-top:1px solid #ccc; margin:auto; margin-top:50px;}
+ .footer_p{ width:610px; margin:0 auto; margin-top:20px;}
+ .footer_p2{ font-size:12px; margin:0 auto; width:455px; margin-top:15px;}
+ .footer_a{ padding:0 10px;}
+ .footer_a:hover{ color:#0CF;}
+ .footer_p3{ margin-top:8px; font-size:12px;}
+ .footer_bg,.footer_bg2{ width:16px; height:16px; display:inline-block; }
+ .footer_bg{background:url(img/yinzhang.png) no-repeat;}
+ .footer_bg2{ background:url(img/records.png) no-repeat;}
+ .footer_p4{ width:268px; margin:0 auto; font-size:12px; margin-top:24px;}
+ </style>
+
+ 
+ 
+  
+  
+  
+
+  
+
+
+
+</head>
+
+<body>
+<!--头部-->
+<!--图片一级导航-->
+
+<div class="top_box">
+  <div class="top_img_box">
+    <a href="#"><img id="topimg" class="top_nav_pisture" src="img/top_img.jpg" /></a>
+    <!--顶上搜索框-->
+    <div class=" top_saerch_box">
+      <input class="search" type="text" placeholder="快乐大本营" /> 
+      <a href="#"><i class="search_i"></i></a>
+      <a class="s_a1" href="#">上传视频<em></em></a>
+      <!--登录注册一栏-->
+     <div class="serch_right_box">
+      <a class="a1" href="#">登录</a>
+      <a class="a1" href="#">注册</a>
+      <a class="a1" href="#">开通VIP</a>
+      <a class="a2" href="#">消息<i class="s_a2_i"></i></a>
+      <a class="a2" href="#">播放记录<i class="s_a2_i"></i></a>
+     <div>
+   </div>
+   
+   
+
+<!--头部侧栏-->
+    <div class="top_right_siderbar">
+
+     <ul class="right_sidebar_ul">
+        <li class="r_s_li"><a class="siaderbar_a" href="#">团圆饭:舌尖上的百味亲情</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">北上广不相信眼泪：职场迷情</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">大秧歌：杨紫刘芊含争抢杨志刚</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">正直播昆仑决：悍将遭播求酷刑</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">蒙面歌王：波斯菊冠军卫冕战</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">爱奇艺人气华语喜剧TOP20</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">好车生活 放心奔跑</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">流行之王：钟汉良动情演唱助阵</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">灵魂摆渡2：马可杨紫再续前缘</a></li>
+        <li class="r_s_li"><a class="siaderbar_a" href="#">蒙面歌王：波斯菊冠军卫冕战</a></li>
+        
+     </ul>
+   </div> 
+   </div>
+   </div> 
+<!--头部下二级边导航-->
+ 
+  <div class="nav_box">
+    <div class="nav_logo_box">
+      <h3 class="nav_logo">
+        <a class="nav_logo_a" href="#">爱奇艺</a> 
+       </h3>
+        <i class="nav_logotext"></i>
+     </div> 
+     
+     <ul class="nav_ul clearfix">
+       <li class="nav_li">
+       <a href="#">娱乐</a>
+       <a href="#">娱乐</a>
+       <a href="#">娱乐</a>
+      </li> 
+      
+       <i class="nav_li_i"></i>
+       <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">微电影</a>
+      </li>
+      <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a class="nav_li_a" href="#">脱口秀<em class="nav_li_a_em"></em></a>
+      </li>
+      
+      <i class="nav_li_i"></i>
+       <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">微电影</a>
+      </li>
+      <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+      </li>
+      
+       <i class="nav_li_i"></i>
+       <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">微电影</a>
+      </li>
+      <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+      </li>
+      
+       <i class="nav_li_i"></i>
+       <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">微电影</a>
+      </li>
+      <li class="nav_li">
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+         <a href="#">娱乐</a>
+      </li>
+      
+       <i class="nav_li_i"></i>
+       <li class="nav_li">
+         <a href="#">风云榜</a>
+         <a href="#">影视大全</a>
+         <a href="#">爱奇艺搜索</a>
+      </li>
+      <li class="nav_li">
+         <a href="#">特色频道</a>
+         <a href="#">爱奇艺出品</a>
+        
+      </li>
+      
+       <i class="nav_li_i"></i>
+       <li class="nav_li">
+         <a href="#">游戏中心</a>
+         <a href="#">应用商店</a>
+         <a href="#">爱奇艺商城</a>
+      </li>
+      <li class="nav_li">
+         <a href="#">VIP会员</a>
+         <a href="#">个人中心</a>
+         <a href="#">开放平台</a>
+      </li>
+       
+       
+      
+     
+     </ul> 
+  </div>
+</div>  
+<!--content-->
+<!--今日焦点-->
+  <div class="today_focus_box clearfix">
+    <div class="focus_l">
+       <div class="tody_logo clearfix">
+          <h3>今日焦点<a class="today_logo_a" href="#">更多&gt;</a></h3>
+       </div>   
+       
+       <p class="tody_p">
+         <a href="#">春节放假开始大家开始抢票老王也来抢了</a>
+       </p>
+       
+       <ul>
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+       </ul>
+        
+   <ul class="today_b_ul">
+     <li class="today_b_li">
+       <a href="#"><img src="img/haoche.jpg" /></a>
+       <a href="#">深圳飙车一组堪比豪车展</a>
+     </li>
+     
+     <li class="today_b_li">
+       <a href="#"><img src="img/haoche.jpg" /></a>
+       <a href="#">深圳飙车一组堪比豪车展</a>
+     </li>
+   </ul>    
+       
+  </div>
+  
+  <div class="foucs_c_box">
+    <div class="foucs_ct_box">
+      <a href="#"><img src="img/cl.jpg" /></a>
+      <div class="f_ct_opa"></div>
+      <p class="clearfix"><a class="f_ct_opa_a" href="#">
+        <i class="f_ct_opa_i"></i>成龙班你谁小菜鸟赶得及嫩嫩看</a>
+      </p>
+    </div>
+    
+    <ul>
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+         <li class="today_l_li">
+         <i></i>
+         <a href="#">全国严查占道行驶</a>
+         <a href="#">高考将取消加分</a>
+         </li>
+         
+       </ul>
+    
+ </div> 
+   
+     <div class="foucs_r_box">
+       <ul class="foucs_ul">
+         <li class="today_b_li2">
+           <a href="#"><img src="img/haoche.jpg" /></a>
+           <a href="#">深圳飙车一组堪比豪车展</a>
+         </li>
+         
+         <li class="today_b_li2">
+           <a href="#"><img src="img/haoche.jpg" /></a>
+           <a href="#">深圳飙车一组堪比豪车展</a>
+         </li>
+         
+         <li class="today_b_li2">
+           <a href="#"><img src="img/haoche.jpg" /></a>
+           <a href="#">深圳飙车一组堪比豪车展</a>
+         </li>
+       
+       </ul>
+     
+     </div>
+  
+  
+</div> 
+<!--综艺-->
+ <div class="variety_bigbox clearfix">
+   <div class="variety_l_box clearfix">
+     <div class="variety_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>综艺</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">韩国综艺</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">星星的密室</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">巅峰拍档</a>
+          </li>
+       
+       </ul>
+       <p class="va_banner_img">
+           <a href="#"><img src="img/鸿星尔克_01.png" alt="鸿星尔克" /></a>
+           <a href="#"><img src="img/雀氏_02.png" alt="雀巢"/></a>
+       </p>
+     </div>
+     <!--以上是栏目-->
+     
+     <div class="varity_b_lbox">
+      <div class="v_b_limg">
+       <a href="#"> <img src="img/runnning.jpg" alt="奔跑吧兄弟" title="奔跑吧兄弟" /></a>
+       <i class="v_l_b_i"></i>
+       <em class="v_l_b_em"></em>
+       <p class="v_l_b_opa"></p>
+       <p class="v_l_b_time">12-16期</p>
+       </div>
+       
+       <p class="vb_lbox_p1"><a href="#">奔跑吧兄弟</a></p>
+       <p class="vb_lbox_p2">奔跑吧兄弟!!奔跑吧兄弟奔跑吧兄弟奔跑吧兄弟!!</p>
+     
+     </div>
+     
+     <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+       
+      </ul> 
+
+
+       <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-14期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-15期</p>
+           </li>
+       
+      </ul> 
+       
+  </div>     
+       
+           
+   <div class="variety_r_box">
+      <div class="v_r_collom">
+         <i class="variety_column_i"></i>
+          <h3 class="v_r_h3">精彩推荐</h3>
+          <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+       <a href="#">
+         <img src="img/v_109340974_m_601_m1_180_101.jpg" />
+       </a>  
+     
+   
+      <dl class="var_r_dl">
+       <dt class="var_r_dt">跑男兄弟舞蹈大乱斗</dt>
+       <dd class="var_r_dd"><i class="var_dt_i"></i>山村婆婆的星生活</dd>
+       <dd class="var_r_dd"><i class="var_dt_i"></i>山村婆婆的星生活</dd>
+       <dd class="var_r_dd"><i class="var_dt_i"></i>山村婆婆的星生活</dd>
+      </dl> 
+      
+      <img src="img/hongxing.jpg" />
+     
+      
+    
+     </div>  
+       
+ </div>   
+ <!--脱口秀-->
+ <div class="mouseshow_bigbox clearfix">
+   <div class="happy_box clearfix">
+     <div class="variety_l_column clearfix">
+           <h3>脱口秀</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+
+     </div>  
+     
+     <!--以上是栏目-->
+     
+    
+     
+     <ul class="mouse_show_ul clearfix">
+           <li class="mouse_show_lione">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/4a8af2aa2d1f446a9b0a9b5cb77caaf5.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/4a8af2aa2d1f446a9b0a9b5cb77caaf5.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+           
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/4a8af2aa2d1f446a9b0a9b5cb77caaf5.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+           
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+          
+       
+      </ul> 
+  
+ 
+   </div>     
+       
+
+  </div> 
+ 
+ 
+ <!--娱乐-->
+ <div class="variety_bigbox clearfix">
+   <div class="happy_box clearfix">
+     <div class="variety_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>娱乐</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">韩国综艺</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">星星的密室</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">巅峰拍档</a>
+          </li>
+       
+       </ul>
+       <p class="va_banner_img">
+           <a href="#"><img src="img/鸿星尔克_01.png" alt="鸿星尔克" /></a>
+           <a href="#"><img src="img/雀氏_02.png" alt="雀巢"/></a>
+       </p>
+     </div>
+     <!--以上是栏目-->
+     
+     <div class="varity_b_lbox">
+      <div class="v_b_limg">
+       <a href="#"> <img src="img/tf_boy.jpg" alt="奔跑吧兄弟" title="奔跑吧兄弟" /></a>
+       <i class="v_l_b_i"></i>
+       <em class="v_l_b_em"></em>
+       <p class="v_l_b_opa"></p>
+       <p class="v_l_b_time">12-16期</p>
+       </div>
+       
+       <p class="vb_lbox_p1"><a href="#">奔跑吧兄弟</a></p>
+       <p class="vb_lbox_p2">奔跑吧兄弟!!奔跑吧兄弟奔跑吧兄弟奔跑吧兄弟!!</p>
+     
+     </div>
+     
+     <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/429aefe56e1a4ec489b387d489ecfc3c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+       
+      </ul> 
+
+
+       <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/b4857086b44d4fd1bc09e0b32128b969.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-14期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100009826_m_601_m7_180_101.jpg"/></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-15期</p>
+           </li>
+       
+        </ul> 
+        
+        <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-14期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/8d9668c84e955_180_101.jpg"/></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-15期</p>
+           </li>
+       
+        </ul> 
+      
+      
+       
+  </div>     
+       
+           
+   
+       
+ </div>   
+ <!--猜你喜欢-->
+ <div class="variety_bigbox clearfix">
+   <div class="happy_box clearfix">
+     <div class="variety_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>猜你喜欢</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">我的播放记录</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">我的收藏</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">我的上传</a>
+          </li>
+          
+       </ul>  
+       
+     </div>  
+     
+     <!--以上是栏目-->
+     
+     <div class="guess_you_like">
+     
+     <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/429aefe56e1a4ec489b387d489ecfc3c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+       
+      </ul> 
+      
+      <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/429aefe56e1a4ec489b387d489ecfc3c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+       
+      </ul> 
+      
+      <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/429aefe56e1a4ec489b387d489ecfc3c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+       
+      </ul> 
+
+
+       <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img  src="img/b4857086b44d4fd1bc09e0b32128b969.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-14期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100009826_m_601_m7_180_101.jpg"/></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-15期</p>
+           </li>
+       
+        </ul> 
+        
+        <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-14期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/gerenzhongxin.jpg"/></a> 
+           </li>
+       
+        </ul> 
+      </div> 
+      
+       
+   </div>     
+       
+           
+   
+       
+  </div> 
+  
+ <!--电影-->
+ 
+ <div class="movie_bigbox clearfix">
+   <div class="variety_l_box clearfix">
+     <div class="variety_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>电影</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul clearfix">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">韩国综艺</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">星星的密室</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">巅峰拍档</a>
+          </li>
+       
+       </ul>
+       
+     </div>
+     
+     
+      <ul class="movie_l_ulone clearfix">
+        
+          <li class="movie_left_li clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/a_62011555_m_601_m1_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img  src="img/v_109013487_m_601_m4_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+        
+      </ul>
+      
+      <ul class="movie_l_ul clearfix">
+        
+          <li class="movie_left_lione clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/a_62011555_m_601_m1_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img  src="img/v_109013487_m_601_m4_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img  src="img/v_109013487_m_601_m4_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+        
+      </ul>
+     
+     
+     
+     </div>
+     <!--以上是栏目-->
+     
+     
+           
+   <div class="movie_r_box">
+      <div class="v_r_collom">
+         <i class="variety_column_i"></i>
+          <h3 class="v_r_h3">精彩推荐</h3>
+          <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+      <ul class="clearfix">
+        <li class="movie_r_li">
+            <i class="movie_r_i"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+         <li class="movie_r_li">
+            <i class="movie_r_i2"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i3"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i4"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i5"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+         <li class="movie_r_li">
+            <i class="movie_r_i6"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em2"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i7"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i8"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em2"></em>
+        </li>
+      
+      </ul>
+     
+      
+    
+     </div>  
+       
+ </div>  
+ 
+ <!--微电影-->
+ <div class="small_movie_box clearfix">
+   <div class="smallmovie_lbox clearfix">
+     <div class="smallmovie_l_column clearfix">
+           <h3>脱口秀</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+
+     </div>  
+     
+     <!--以上是栏目-->
+     
+    
+     
+     <ul class="smallmovie_lul clearfix">
+           <li class="mouse_show_lione">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/4a8af2aa2d1f446a9b0a9b5cb77caaf5.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/4a8af2aa2d1f446a9b0a9b5cb77caaf5.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+         </ul>   
+           
+          
+       
+      
+  
+ 
+   </div>  
+   
+   
+   <div class="smallmovie_rbox clearfix">
+     <div class="smallmovie_r_column clearfix">
+           <h3>脱口秀</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+
+     </div>  
+     
+     <!--以上是栏目-->
+     
+    
+     
+     <ul class="smallmovie_lul clearfix">
+           <li class="mouse_show_lione">
+                <a href="#"><img src="img/18ed86a849dc463faaababea1225af5c.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           <li class="mouse_show_li">
+                <a href="#"><img src="img/4a8af2aa2d1f446a9b0a9b5cb77caaf5.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           
+         </ul>   
+           
+          
+       
+      
+  
+ 
+   </div>    
+       
+
+  </div>
+  
+ <!--电视剧-->
+ <div class="movie_bigbox clearfix">
+   <div class="variety_l_box clearfix">
+     <div class="variety_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>电视剧</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul clearfix">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">韩国综艺</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">星星的密室</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">巅峰拍档</a>
+          </li>
+       
+       </ul>
+       
+     </div>
+     
+     
+      <ul class="movie_l_ulone clearfix">
+        
+          <li class="movie_left_li clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/a_62011555_m_601_m1_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img  src="img/v_109013487_m_601_m4_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+        
+      </ul>
+      
+      <ul class="movie_l_ul clearfix">
+        
+          <li class="movie_left_lione clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/cf873a7cb3f7498e8b9fb1ed8bce3437.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img src="img/a_62011555_m_601_m1_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img  src="img/v_109013487_m_601_m4_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+          <li class="movie_left_li clearfix">
+            <img  src="img/v_109013487_m_601_m4_180_236.jpg" />
+            <a href="#">我的野蛮女友</a>
+          </li>
+          
+        
+      </ul>
+     
+     
+     
+     </div>
+     <!--以上是栏目-->
+     
+     
+           
+   <div class="movie_r_box">
+      <div class="v_r_collom">
+         <i class="variety_column_i"></i>
+          <h3 class="v_r_h3">精彩推荐</h3>
+          <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+      <ul class="clearfix">
+        <li class="movie_r_li">
+            <i class="movie_r_i"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+         <li class="movie_r_li">
+            <i class="movie_r_i2"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i3"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i4"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i5"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+         <li class="movie_r_li">
+            <i class="movie_r_i6"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em2"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i7"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em"></em>
+        </li>
+        
+        <li class="movie_r_li">
+            <i class="movie_r_i8"></i>
+            <a href="#">痞子英雄2:黎明崛起</a>
+            <em class="movie_r_em2"></em>
+        </li>
+      
+      </ul>
+     
+      
+    
+     </div>  
+       
+ </div> 
+ 
+ <!--动漫-->
+ <div class="variety_bigbox clearfix">
+   <div class="animation_l_box clearfix">
+     <div class="animation_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>动漫</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">星星的密室</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">巅峰拍档</a>
+          </li>
+       
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+     
+     <div class="animation_b_lbox">
+      <div class="v_b_limg2">
+       <a href="#"> <img src="img/dongman.jpg" alt="奔跑吧兄弟" title="奔跑吧兄弟" /></a>
+       <i class="v_l_b_i"></i>
+       <em class="v_l_b_em"></em>
+       <p class="v_l_b_opa"></p>
+       <p class="v_l_b_time">12-16期</p>
+       </div>
+       
+       <p class="vb_lbox_p1"><a href="#">奔跑吧兄弟</a></p>
+      
+     
+     </div>
+     
+     <ul class="vb_c_ul2 clearfix">
+           <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+           <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+       
+      </ul> 
+
+
+  </div>     
+       
+           
+   <div class="animation_r_box">
+      <div class="v_r_collom">
+             <i class="variety_column_i"></i>
+              <h3 class="v_r_h3">少儿</h3>
+              <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+       <ul class="sport_c_ul clearfix">
+            <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+           
+           <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+       
+      </ul>
+     
+      </div> 
+      
+      
+      <div class="animation_r_box">
+      <div class="v_r_collom">
+             <i class="variety_column_i"></i>
+              <h3 class="v_r_h3">教育</h3>
+              <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+       <ul class="sport_c_ul clearfix">
+            <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+           
+           <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+       
+      </ul>
+     
+      </div> 
+    
+      
+       
+ </div>
+ 
+ <!--体育音乐时尚-->
+ 
+ <div class="variety_bigbox clearfix">
+ 
+ <!--体育-->
+   <div class="sport_l_box clearfix">
+     <div class="sport_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>动漫</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+         
+          
+          
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+     <div class="sport_margin">
+     
+     <ul class="sport_l_ul clearfix">
+          <li class="vb_c_li2">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li2">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+ 
+      </ul> 
+      
+      <ul class="sport_l_ul clearfix">
+          <li class="vb_c_li2">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+           
+           <li class="vb_c_li2">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+ 
+       </ul>
+     </div> 
+      
+  </div>    
+      
+      
+ <!--音乐-->
+ 
+ <div class="muice_c_box clearfix">
+     <div class="sport_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>音乐</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+         
+          
+          
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+    <div class="muice_margin_box">
+      
+      <div class="muice_b_lbox">
+        <a href="#">
+          <img src="img/luhan.jpg" />
+         </a>  
+        
+        <a class="mucie_img_a" href="#">张靓颖</a>
+     
+      </div>
+     
+     <ul class="sport_l_ul clearfix">
+           <li class="vb_c_li2">
+                <a href="#"><img src="img/a_100013542_m_601_180_101.jpg"/></a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li2">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+ 
+      </ul> 
+      </div>
+      
+      
+     
+   </div>   
+   
+    <div class="animation_r_box">
+      <div class="v_r_collom">
+             <i class="variety_column_i"></i>
+              <h3 class="v_r_h3">教育</h3>
+              <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+       <ul class="sport_c_ul clearfix">
+            <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+           
+           <li class="sport_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa2"></p>
+                <p class="v_l_c_time2">12-16期</p>
+           </li>
+       
+      </ul>
+     
+      </div> 
+    </div> 
+    
+ <!--母婴生活旅游-->
+ 
+ <div class="variety_bigbox clearfix">
+ 
+ <!--母婴-->
+   <div class="sport_l_box clearfix">
+     <div class="sport_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>母婴</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+         
+          
+          
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+    
+     
+     <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+     
+     </ul>
+      
+     
+     
+      
+  </div>    
+      
+      
+ <!--生活-->
+ 
+ <div class="muice_c_box clearfix">
+     <div class="sport_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>生活</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+       </ul>  
+          
+          
+       
+      
+     </div>
+     <!--以上是栏目-->
+    
+      <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+     
+     </ul>
+     
+   
+      
+      
+      
+     
+   </div>   
+   <!--旅游-->
+   
+    <div class="animation_r_box">
+      <div class="v_r_collom">
+             <i class="variety_column_i"></i>
+              <h3 class="v_r_h3">旅游</h3>
+              <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+     
+     <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+  
+     </ul>
+     
+      </div> 
+      
+      
+    </div>
+ <!--科技汽车财经-->
+ <div class="variety_bigbox clearfix">
+ 
+ <!--母婴-->
+   <div class="sport_l_box clearfix">
+     <div class="sport_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>财经</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+         
+          
+          
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+    
+     
+     <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+     
+     </ul>
+      
+     
+     
+      
+  </div>    
+      
+      
+ <!--生活-->
+ 
+ <div class="muice_c_box clearfix">
+     <div class="sport_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>科技</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+       </ul>  
+          
+          
+       
+      
+     </div>
+     <!--以上是栏目-->
+    
+      <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+     
+     </ul>
+     
+   
+      
+      
+      
+     
+   </div>   
+   <!--旅游-->
+   
+    <div class="animation_r_box">
+      <div class="v_r_collom">
+             <i class="variety_column_i"></i>
+              <h3 class="v_r_h3">汽车</h3>
+              <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+     
+     <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+  
+     </ul>
+     
+      </div> 
+      
+      
+    </div>
+ <!--纪录片-->   
+  <div class="variety_bigbox clearfix">
+   <div class="animation_l_box clearfix">
+     <div class="animation_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>纪录片</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+   
+       
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+     
+      <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+       
+        <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+     
+     </ul>
+    
+ </div>  
+ 
+ <div class="war_r_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>军事</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+       </ul>  
+    </div>   
+       
+       <ul class="baby_ul">
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+ 
+     </ul> 
+         
+       
+       
+      
+     </div>  
+     
+ <!--原创-->
+ <div class="variety_bigbox clearfix">
+   <div class="variety_l_box clearfix">
+     <div class="variety_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>综艺</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">韩国综艺</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">星星的密室</a>
+          </li>
+          
+           <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">巅峰拍档</a>
+          </li>
+       
+       </ul>
+
+     </div>
+     <!--以上是栏目-->
+     
+     <div class="varity_b_lbox">
+      <div class="v_b_limg">
+       <a href="#"> <img src="img/yuanchuang.jpg" alt="奔跑吧兄弟" title="奔跑吧兄弟" /></a>
+       <i class="v_l_b_i"></i>
+       <em class="v_l_b_em"></em>
+       <p class="v_l_b_opa"></p>
+       <p class="v_l_b_time">12-16期</p>
+       </div>
+       
+       <p class="vb_lbox_p1"><a href="#">奔跑吧兄弟</a></p>
+       <p class="vb_lbox_p2">奔跑吧兄弟!!奔跑吧兄弟奔跑吧兄弟奔跑吧兄弟!!</p>
+     
+     </div>
+     
+     <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-16期</p>
+           </li>
+       
+      </ul> 
+
+
+       <ul class="vb_c_ul clearfix">
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-14期</p>
+           </li> 
+           
+           <li class="vb_c_li">
+                <a href="#"><img src="img/a_100008753_m_601_m9_180_101.jpg" /></a>
+                <a class="vb_c_li_a" href="#">综艺大热门</a>
+                <p class="vb_c_li_p">高晓松壁谈离婚问题</p>
+                <em class="v_l_b_em"></em>
+                <p class="v_l_c_opa"></p>
+                <p class="v_l_c_time">12-15期</p>
+           </li>
+       
+      </ul> 
+       
+  </div>     
+       
+           
+   <div class="variety_r_box">
+      <div class="v_r_collom">
+         <i class="variety_column_i"></i>
+          <h3 class="v_r_h3">原创达人</h3>
+          <a class="v_r_h3_a" href="#">更多&gt;</a>
+       </div> 
+       
+      <ul class="diy_ul">
+        <li class="diy_li clearfix">
+          <a href="#"><img class="diy_img" src="img/jietou.png" /></a>
+          <div class="diy_li_div">
+             <a class="diy_a" href="#">街头整蛊大师</a>
+             <a class="diy_read" href="#">+ 订阅</a>
+          </div>
+        </li>
+        
+        <li class="diy_li clearfix">
+          <a href="#"><img class="diy_img" src="img/jietou.png" /></a>
+          <div class="diy_li_div">
+             <a class="diy_a" href="#">街头整蛊大师</a>
+             <a class="diy_read" href="#">+ 订阅</a>
+          </div>
+        </li>
+        
+        <li class="diy_li clearfix">
+          <a href="#"><img class="diy_img" src="img/jietou.png" /></a>
+          <div class="diy_li_div">
+             <a class="diy_a" href="#">街头整蛊大师</a>
+             <a class="diy_read" href="#">+ 订阅</a>
+          </div>
+        </li>
+        
+         <li class="diy_li clearfix">
+          <a href="#"><img class="diy_img" src="img/jietou.png" /></a>
+          <div class="diy_li_div">
+             <a class="diy_a" href="#">街头整蛊大师</a>
+             <a class="diy_read" href="#">+ 订阅</a>
+          </div>
+        </li>
+        
+       
+        
+        
+      </ul>
+      
+    
+     </div>  
+       
+ </div>  
+ <!--搞笑-->
+ 
+ <div class="variety_bigbox clearfix">
+   <div class="animation_l_box clearfix">
+     <div class="laugh_l_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>搞笑</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">晓松奇谈</a>
+          </li>
+   
+       
+       </ul>
+      
+     </div>
+     <!--以上是栏目-->
+     
+      <ul class="baby_ul">
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+       
+        <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+     
+     </ul>
+    
+ </div>  
+ 
+ <div class="laugh_r_column clearfix">
+           <i class="variety_column_i"></i>
+           <h3>拍客</h3>
+           <a class="z_c_h3_a" href="#">更多&gt;</a>
+       
+       <ul class="va_l_c_ul">
+              <li class="va_l_c_li1">
+              <a href="#">爱奇艺出品</a>
+          </li>
+          
+          <li class="va_l_c_li">
+              <i class="va_c_i"></i>
+              <a href="#">动画电影</a>
+          </li>
+       </ul>  
+    </div>   
+       
+       <ul class="baby_ul">
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+         <i class="p1080"></i>
+       </li>
+       
+       <li class="baby_li">
+         <a href="#"><img src="img/muying.jpg" /></a>
+         <a class="baby_a" href="#">二胎们注意啦啦啦啦</a>
+       </li>
+ 
+     </ul> 
+         
+       
+       
+      
+     </div>
+    
+     
+     
+ <!--搞笑下方-->
+ 
+  <div class="last_nav_box clearfix">
+    <ul class="last_ul clearfix">
+       <li class="last_li">
+          <div class="last_opa"></div>
+          <p class="last_opa_p">销售言论</p>
+          <a href="#"> <img src="img/lastnv1.jpg" /></a>
+          <a class="last_b_a" href="#">特色频道<span>更多&gt;</span></a>
+       </li>
+       
+       <li class="last_li">
+          <div class="last_opa"></div>
+          <p class="last_opa_p">销售言论</p>
+          <a href="#"> <img src="img/lastnv1.jpg" /></a>
+          <a class="last_b_a" href="#">特色频道<span>更多&gt;</span></a>
+       </li>
+       
+       <li class="last_li">
+          <div class="last_opa"></div>
+          <p class="last_opa_p">销售言论</p>
+          <a href="#"> <img src="img/lastnv1.jpg" /></a>
+          <a class="last_b_a" href="#">特色频道<span>更多&gt;</span></a>
+       </li>
+       
+       
+       <li class="last_li">
+          <div class="last_opa"></div>
+          <p class="last_opa_p">销售言论</p>
+          <a href="#"> <img src="img/lastnv1.jpg" /></a>
+          <a class="last_b_a" href="#">特色频道<span>更多&gt;</span></a>
+       </li>
+       
+       
+       <li class="last_li">
+          <div class="last_opa"></div>
+          <p class="last_opa_p">销售言论</p>
+          <a href="#"> <img src="img/lastnv1.jpg" /></a>
+          <a class="last_b_a" href="#">特色频道<span>更多&gt;</span></a>
+       </li>
+       
+    </ul>
+   </div> 
+  
+    
+      
+    
+    
+  <!--底部友情链接-->
+ <div class="frendlink_box clearfix">
+    <div class="frend_l_box">
+      <h3 class="frendlinke_h3">合作伙伴<a href="#">更多&gt;</a></h3>
+      
+      <ul class="frend_ul">
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        
+      </ul>
+    </div>
+    
+     <div class="frend_l_box">
+      <h3 class="frendlinke_h3">爱奇艺动态<a href="#">更多&gt;</a></h3>
+      
+      <ul class="frend_ul">
+        <li class="frend_li"><a href="#">爱奇艺获得百度小米战略投资</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">爱奇艺获得百度小米战略投资</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+        <li class="frend_li"><a href="#">爱奇艺获得百度小米战略投资</a></li>
+        <li class="frend_li"><a href="#">华影公司</a></li>
+       
+        
+      </ul>
+    </div>
+ 
+ </div>  
+ 
+ <!--页脚-->
+ <div class="footer_bigbox">
+    <p class="footer_p">
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    <a class="footer_a" href="#">应用商店</a><span>|</span>
+    </p>
+    
+    <p class="footer_p2">
+    违法和不良信息举报电话：400-800-7171
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;举报邮箱：jubao365@qiyi.com
+    </p>
+    
+    <p class="footer_p3">
+     <i class="footer_bg"></i>
+      &nbsp;中国互联网诚信联盟 &nbsp; &nbsp;  互联网违法和不良信息举报中心 广播电视&nbsp;  信息网络传播视听节目许可证 0110544号   &nbsp;广播电视节目制作经营许可证 (京)字第1938号
+    </p>
+    
+    <p class="footer_p3">
+     <i class="footer_bg2"></i>
+      &nbsp;经营性网站&nbsp;备案信息京公网安备 11010802010263号 &nbsp; &nbsp;  互联网违法和不良信息举报中心 &nbsp;   &nbsp;广播电视节目制作经营许可证 (京)字第1938号
+    </p>
+    
+    <p class="footer_p4">
+    Copyright © 2015 爱奇艺 All Rights Reserved
+    </p>
+    
+    
+    
+   
+ 
+ 
+ </div>
+ 
+ 
+ 
+
+ 
+      
+     
+      
+      
+       
+  
+ 
+    
+ 
+    
+    
+    
+   
+    
+ 
+    
+    
+      
+   
+
+       
+
+ 
+
+ 
+  
+     
+     
+     
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+ 
+ 
+
+  
+        
+       
+       
+      
+     
+        
+       
+      
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+   
+   
+ 
+ 
+   
+   
+    
+ 
+  
+
+
+   
+
+
+
+ 
+ 
+
+</body>
+</html>

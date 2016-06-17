@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>canvas</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+    .m-d-right{ float: left; width: 400px;  }
+    .m-d-right .clock{ width: 320px; margin:20px;  }
+</style>
+<script>
+    window.onload=function(){
+            var oC=document.getElementById('m-j-clock');
+
+            var gd=oC.getContext('2d'); //画笔
+                        //  开始位置    结束位置    半径  颜色  线宽
+            function drawArc(start,end,r,color,lineWidth){
+                start=start-90;
+                end=end-90;
+                r=r || 100;
+                color=color || 'red';
+                lineWidth=lineWidth || 15;  //线宽
+                gd.lineJoin='round';    //连接点样式
+                //gd.lineCap='round';   起始和结束样式
+                gd.beginPath();
+                gd.strokeStyle=color;
+                gd.lineWidth=lineWidth;
+                gd.arc(160,80,r,d2a(start),d2a(end),false);
+                gd.stroke();
+            }
+
+            function clock(){
+                gd.clearRect(0,0,oC.width,oC.height);   //清除画布
+                var oDate=new Date();
+                var h=oDate.getHours();
+                var m=oDate.getMinutes();
+                var s=oDate.getSeconds();
+                var ms=oDate.getMilliseconds();
+
+                drawArc(0,6*s+ms/1000*6,60,'red');
+                drawArc(0,6*m+s/60*6,40,'green');
+                drawArc(0,30*(h%12)+m/60*30,20,'blue');
+
+                //画文字
+                gd.font='20px a';
+                gd.textAlign='center';
+                var str=h+':'+m+':'+s;
+                gd.fillText(str,55,45);
+            }
+            clock();
+            setInterval(clock,30);
+        };
+        function d2a(d){
+                return d*Math.PI/180;
+        }
+</script>
+</head>
+<body>
+        <div class="m-d-right">
+            <h3>Canvas 时钟</h3>
+            <canvas class="clock" id="m-j-clock"></canvas>
+        </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<style>
+     .return{ display: block; height: 50px; line-height: 50px; text-align: center; font-size: 20px; }
+     p{ height: 20px;  line-height: 20px;font-size: 20px; text-align: center; margin-bottom: 30px; }
+    /*视频*/
+    .m-video{ height: 600px; background: #f1f1f1;}
+    .play{ background: url(img/play.gif) no-repeat; background-size:cover; }
+    .pause{ background: url(img/pause.gif) no-repeat; background-size:cover; }
+    .currentajian{  background: url(img/currenttimef.gif) no-repeat; background-size:cover;  }
+    .currentaadd{  background: url(img/currenttimes.gif) no-repeat;  background-size:cover; }
+    .big{ background: #000; color: #fff; text-align: center; line-height: 40px; }
+    .vocadd{ background: url(img/volumejian.gif) no-repeat;  background-size:cover; }
+    .vocjian{ background: url(img/volumeadd.gif) no-repeat;  background-size:cover; }
+    .voce{  background: url(img/volume.gif) no-repeat;  background-size:cover; }
+    .volclose{background: url(img/volclose.gif) no-repeat; background-size:cover; }
+    .video_box li{float: left;list-style: none; width: 40px;height: 40px;background-size:cover;
+             transition: 0.4s all ease;margin: 0 6px; }
+    .video_box ul li:active{transform: translate(0,4px);}
+    .video_box ul{margin: 0 auto;width: 500px;}
+    .video_box{ margin:0 auto; margin-top: 40px;  width: 600px; cursor:pointer; }
+
+</style>
+
+<script>
+    window.onload=function(){
+        //veido 播放
+        (function(){
+            var aBtn=document.querySelectorAll('.video_box li');
+            var aV=document.querySelector('#video');
+            aBtn[0].onclick=function(){
+                    aV.play();  
+            };
+
+            aBtn[1].onclick=function(){
+                    aV.pause();  
+            };
+
+             aBtn[2].onclick=function(){
+                    aV.currentTime-=10; 
+            };
+            aBtn[3].onclick=function(){
+                    aV.currentTime+=10; 
+            };
+            aBtn[8].onclick=function(){
+                    aV.webkitRequestFullScreen();
+            }
+            aBtn[4].onclick=function(){
+                    aV.volume+=0.1;
+            }
+            aBtn[6].onclick=function(){
+                    aV.volume-=0.1;
+            }
+      
+            var bFlag=true;
+            aBtn[7].onclick=function(){
+                if(bFlag)
+                {
+                     aV.muted=true;
+                }
+                else{
+                     aV.muted=false;
+                }
+                   bFlag=!bFlag;
+                }
+        })();
+        
+            
+        
+    };
+</script>
+</head>
+<body>
+  <section>
+      <div class="m-video">
+          <a class="return"  href="index.html">返回主页</a>
+          <p>操作下面按钮</p>
+          <div class="video_box">
+                <video src="1.mp4" id="video"></video>
+                <div>
+                    <ul>
+                        <li class="play"></li>
+                        <li class="pause"></li>
+                        <li class="currentajian"></li>
+                        <li class="currentaadd"></li>
+                        <li class="vocadd"></li>
+                        <li class="voce"></li>
+                        <li class="vocjian"></li>
+                        <li class="volclose"></li>
+                        <li class="big">全屏</li>
+                    </ul>
+                </div>
+            </div>
+      </div>
+  </section>  
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+<style>
+    *{ padding:0; margin:0; }
+    body,h1,h2,h3,h4,h5,h6,p,div,ul,ol,li,dt,dd,dl,i,em,strong,b,form{ font-size:12px; font-family:Verdana, Geneva, sans-serif 'Microsoft Yahei';}
+    ul,ol,dl{ list-style:none;}
+    a{ color:#000; text-decoration:none;}
+    a img{ border:0;vertical-align:top;}
+    i,em{ font-style:normal;}
+    b,strong{ font-weight:normal;}
+    input,textarea{ outline:none; outline:none; resize:none;}
+    .fl{ float:left;display:inline;}
+    .fr{ float:right;display:inline;}
+    .por{ position:relative;}
+    .clearFix:after{ display:block; content:''; clear:both;}
+    .clearFix{ zoom:1;}
+   
+
+
+    
+    .header{width: 16rem; height:2.2rem; border-bottom: 0.1rem solid #4bccae; background:-webkit-linear-gradient(left, #262626,#25262b); margin: 0 auto; overflow: hidden; }
+    .header .l{display:block; width:1.5rem; height:1.15rem; background:url(img/1.png) no-repeat ; margin-left:0.4rem; margin-top: 0.5rem; float: left;}
+    .header .l{ background-size: contain; }
+
+    .header h1{width: 6.325rem; height: 1.15rem; background: url(img/2.png) no-repeat; margin-top: 0.5rem; margin-left: 3rem; float: left; text-indent: -999em;}
+    .header h1{ background-size: contain;}
+
+    .header .r{ display: block; width: 1.5rem; height: 1.15rem; background: url(img/3.png) no-repeat;margin-top: 0.5rem; margin-left: 3rem; float: left; }
+    .header .r{ background-size: contain;}
+    
+    section{ width:16rem;  overflow: hidden;}
+    nav{ width: 100%;  height:2rem; background: #fafafa;  position: relative;  }
+    nav div{ width: 50%; height: 100%; float: left;}
+    nav a{ display:block;width: 100%; height:1.5rem;float: left; margin-top: 0.325rem;  }
+    nav a i{display: block; width: 1.5rem; height: 1.5rem; background:url(img/4.png) no-repeat ; float: left; }
+    nav a i{background-size: contain; margin-left:1.425rem; margin-top:0rem; border-right: 0.1rem solid #fff;}
+     nav a span{ display: block; float: left; width: 3.1rem; height: 1.5rem; line-height: 1.5rem; margin-left: 0.7rem; font-size: 0.75rem;}
+     nav .cen{ width: 0.15rem; height: 1.525rem; background: url(img/5.png) no-repeat; position: absolute; left:50%; top:0.15rem;}
+
+     .cont{ width: 100%; position: relative;}
+     .cont img{ width: 100%;}
+     .cont p{ width: 100%; height: 1.85rem; position: absolute; left: 0; bottom: 0; line-height: 1.85rem; text-align: center; background: rgba(0,0,0,0.3);color: #fff; font-size: 0.75rem;}
+
+    .list{ width: 100%; border-bottom: 0.15rem solid #57c0af;}
+    .list li{ width:15.25rem; height: 2rem; line-height: 2rem; border-bottom: 0.1rem solid #ececec; font-size: 0.75rem; margin:0 auto;}
+    .list .last{border: none;}
+    h3{ width: 100%; height:2rem; background: #fafafa; line-height: 2rem; padding-left: 0.75rem; font-size: 1rem; position: relative; }
+    h3 i{ width:1.475rem; height: 1.4rem; float:right; background: url(img/6.png) no-repeat;}
+    h3 i{background-size: contain; padding-right:1.5rem; margin-top: 0.3rem; }
+
+    .list2{width: 100%; border-bottom: 0.1rem solid #f1f1f1;}
+    .list2 li{width: 3.1rem; height: 2rem; float: left; text-align: center; line-height: 2rem; font-size: 0.75rem;}
+    .list2 .active{ border-bottom: 0.2rem solid #dc3d5b;}
+
+    .list3{ width: 100%; border-bottom: 1px solid #e3e3e3;}
+    .list3 li{width:15.25rem;  margin: 0 auto;  font-size: 0.75rem; border-bottom: 0.1rem solid #f1f1f1;margin-top: 0.575rem; padding-bottom: 0.575rem;}
+    .list3 .active{ width: 100%; overflow: hidden;}
+    .list3 .active div{width: 5.15rem;padding: 0.575rem 0.3rem;float: left; }
+    .list3 .active img{width: 100%; display: block;}
+    .list3 .active p{width:8.85rem; padding: 0.575rem 0.3rem;line-height: 1.15rem;float:left; font-size: 0.65rem;  }
+    .list3 .last{ border-bottom: none;}
+
+    .ding{ display:block;width: 100%;height: 3rem;  font-size: 0.75rem; background: #fafafa;  border-bottom: 0.2rem solid #4dcaa8;}
+    .ding i{width: 1.45rem; height: 1.45rem; background: url(img/7.png) no-repeat; }
+    .ding i{display: block; float: left;; background-size: contain; margin-left:5.5rem; margin-top: 0.9rem; }
+    .ding span{ display:block;  float:left; margin-left:0.35rem;margin-top: 1.25rem;}
+
+    .footer{width: 16rem; height: 2rem; background: #262626;overflow: hidden; padding: 0.875rem 0 ;}
+    .footer a{ display: block; width: 50%;  height:1.875rem;border-right:1px solid #686868; color: #fff; font-size: 0.75rem; float: left; box-sizing: border-box; overflow: hidden; }
+    .footer i{ display:block; float:left;width: 1.525rem; height: 1.25rem; background: url(img/8.png) no-repeat; background-size: contain; margin-right: 0.5rem; margin-left: 2rem; margin-top: 0.5rem; }
+    .footer span{display:block;height: 1.25rem; margin-top: 0.5rem; float: left;}
+</style>
+<script type="text/javascript">
+
+    (function(global){
+            function remChange(){
+                document.documentElement.style.fontSize=20*document.documentElement.clientWidth/320+'px';
+            }
+            remChange();
+            global.addEventListener('resize',remChange,false);
+        })(window);
+
+
+</script>
+</head>
+<body>
+    <header class="header">
+        <a href="javascript:;" class="l"></a>
+        <h1>Guokr</h1>
+        <a href="javascript:;" class="r"></a>
+    </header>
+
+    <section>
+        <nav class="clearFix">
+           <div> <a href="javascript:;"class="enter"><i></i><span>用户登录</span></a></div>
+            <div><a href="javascript:;" class="login"><i></i><span>用户注册</span></a></div>
+            <i class="cen"></i>
+        </nav>
+
+        <div class="cont">
+            <img src="img/1.jpg" alt="">
+            <p>kasflaljjaslj</p>
+        </div>
+
+        <ul class="list">
+            <li><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+            <li><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+            <li><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+            <li><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+            <li><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+            <li><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+            <li class="last"><a href="javascript:;">父级分宽度，先减去固定宽度</a></li>
+        </ul>
+
+        <h3>热门问答
+            <i></i>
+        </h3>
+
+    <ul class="list2 clearFix">
+        <li class="active"><a href="javascript:;">科技</a></li>
+        <li><a href="javascript:;">生活</a></li>
+        <li><a href="javascript:;">自然</a></li>
+        <li><a href="javascript:;">人文</a></li>
+
+    </ul>
+    
+    <ul class="list3">
+        <li><a href="javascript:;">运动播放状态</a>
+                <div class="active clearFix">
+                    <div><img src="img/2.jpg" alt=""></div>
+                    <p>移动端布局需要加上一些meta信息：默认情况下，手机多个窗口展示？ 980px</p>
+                </div>
+        </li>
+        <li><a href="javascript:;">运动播放状态</a></li>
+        <li><a href="javascript:;">运动播放状态</a></li>
+        <li><a href="javascript:;">运动播放状态</a></li>
+        <li class="last"><a href="javascript:;">运动播放状态</a></li>
+    </ul>
+
+    <ul class="list3">
+        <li><a href="javascript:;">运动播放状态</a>
+                <div class="active clearFix">
+                    <div><img src="img/3.jpg" alt=""></div>
+                    <p>移动端布局需要加上一些meta信息：默认情况下，手机多个窗口展示？ 980px</p>
+                </div>
+        </li>
+        <li><a href="javascript:;">运动播放状态</a></li>
+        <li><a href="javascript:;">运动播放状态</a></li>
+        <li><a href="javascript:;">运动播放状态</a></li>
+        <li class="last"><a href="javascript:;">运动播放状态</a></li>
+    </ul>
+
+    <a href="javascript:;" class="ding clearFix"><i></i><span>回到顶部</span></a>
+    </section>
+
+    <footer class="footer">
+        <a href="javascript:;" class="l"><i></i><span>PC版</span></a>
+        <a href="javascript:;" class="r"><i></i><span>移动应用</span></a>
+    </footer>
+</body>
+</html>

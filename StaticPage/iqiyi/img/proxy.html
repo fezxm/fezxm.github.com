@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://passport.pps.tv/pages/user/proxy.action#QC007=DIRECT -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>proxy for cross domain resource sharing</title>
+    <script type="text/javascript" src="sea1.2.js"></script> 
+    <script type="text/javascript">
+      var queryStr = location.search;
+      if(!queryStr && location.hash){
+        queryStr = location.hash.slice(1);
+      }
+      var queryObj = Q.url.queryToJson(queryStr);
+      var thisDomain = location.hostname.split(".").reverse().slice(0,2).reverse().join(".");
+      document.domain = thisDomain;
+      var refDomain = document.referrer.match(/https?:\/\/([^\/]+)/);
+      if(refDomain){
+        refDomain = refDomain[1].split(".").reverse().slice(0,2).reverse().join(".")
+        if(refDomain !== thisDomain && refDomain.match(/i?qiyi\.com|pps\.tv/)){
+          for(var key in queryObj){
+            if(queryObj.hasOwnProperty(key)){
+              var val = queryObj[key];
+              var valArr = val.split(";");
+              var extra = "";
+              if(valArr.length > 1){
+                val = valArr[0];
+                extra = ";" + valArr.slice(1).join(";");
+              }
+              document.cookie = key + "=" + encodeURIComponent(val) + extra + ";path=/;domain=." + thisDomain; 
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+<object id="swf_icr9o50s" height="1" width="1" type="application/x-shockwave-flash" data="http://www.iqiyi.com/player/cupid/common/clear.swf?r=mjymwm" style="position:absolute;top:0;left:0;zIndex:-999;"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="wMode" value="window"><param name="align" value="middle"><param name="bgcolor" value="#000000"><param name="swLiveConnect" value="true"><param name="loop" value="true"><param name="play" value="true"><param name="DeviceFont" value="false"><param name="allowFullScreen" value="true"><param name="menu" value="true"><div id="qiyi_flash_install" style="height:100%;background: rgb(0, 0, 0); "><div style="top: 50%; width: 100%; text-align: center; margin-top: -50px; position: absolute;"><p><a style="padding: 10px; color: rgb(255, 255, 255); font-size: 14px;" href="http://www.adobe.com/go/getflashplayer" target="_blank">主人，没有安装flash player不能播放啊~~请您<span class="green">立即安装</span></a></p><p style="margin-top: 40px;"><a style="padding: 10px; color: rgb(255, 255, 255); font-size: 14px;" href="http://mbdapp.iqiyi.com/j/ot/QIYImedia_0_08.exe" target="_blank">打死也不想装Flash？可以试试我们的<span class="green">桌面客户端</span>，用过的都觉得好！</a></p></div></div></object></body></html>

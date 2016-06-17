@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+ <link rel="stylesheet" href="css/base.css" />
+  <style>
+    /*head*/
+	.head_box{ height:120px; background:url(img/head.png) center 0;}
+	/*nav*/
+	.navbox{ height:42px; background:url(img/navback.png) repeat-x;}
+	.nav{ width:960px; height:42px; margin:0 auto;}
+	.nav_ul{ padding-top:8px; float:left;}
+	.nav_li{ height:24px; line-height:24px; margin-left:16px; float:left}
+	.nav_i{ background:url(img/nav_bian.png) no-repeat; float:left;width:2px;height:24px; margin-left:16px;}
+	.nav_lia1{ color:#eeb88c; font-size:14px; float:left;}
+	.nav_lia{ color:#fff;float:left;}
+	.nav_lia:hover{ color:#eeb88c;}
+	.nav_collection{ float:right; width:44px; height:24px; background:#210c01; color:#a8805c; line-height:24px; text-align:center; margin-top:8px; border-radius:8px;}
+	
+    /*scrollpicture*/
+	
+	.scrollpicture{ height:452px; background:url(img/2014-11-03-15-01-17.jpg) center 0;}
+	
+   /*srvice*/
+   .service_box{ width:960px; margin:0 auto; height:62px; background:url(img/service_back.png) repeat-x; margin-bottom:20px;}
+   .service_li{ padding-left:16px; padding-top:10px; float:left;}
+   .serviceimg{float:left;}
+   .srvice_h1{float:left}
+   .service_i{ font-size:8px; color:#9c9c9c;font-weight:bold;}
+   .service_p{ color:#9c5f2c; font-size:8px;font-weight:bold;}
+   .service_em{ float:left; background:url(img/service_bian.png) no-repeat; width:1px; height:53px; margin-left:16px;}
+   .service_i2{ margin-top:10px;font-size:8px; color:#9c9c9c; display:block; font-weight:bold;}
+   .service_qqimg{ margin-left:11px; margin-top:12px;}
+   /*banner*/
+   .banner_box{ width:960px; margin:0 auto; overflow:hidden;}
+   .banner_img{ width:310px; height:310px; float:left; margin-left:15px;}
+   .banner_imgbox{ margin-left:-15px; margin-bottom:15px;}
+   /*main*/
+   .main_box{ width:960px; margin:0 auto; overflow:hidden;}
+   .main_h3{ height:72px; border-bottom:1px solid #dbdbdb; margin-bottom:16px;}
+   .main_logo{ margin-top:21px;}
+   .main_h3_a{ float:right; font-size:12px; color:#787878; margin-top:44px;}
+   .main_h3_a:hover{ color:#FCF;}
+   .m_a_span{ color:#ba9bba;}
+   .main_l_img{ width:310px; height:497px;}
+   .main_l_box{ position: relative; float:left;}
+   .l_point{ position:absolute; top:202px; left:15px; opacity:0.5; filter:alpha( opacity=50)}
+   .r_point{ position:absolute;right:15px; top:202px; opacity:0.5;filter:alpha(opacity=50)}
+   .r_point:hover{ opacity:0.8;filter:alpha(opacity=80)}
+   .l_point:hover{opacity:0.8;filter:alpha(opacity=80)}
+   .main_l_div{ width:310px; height:40px; background:#000; position:absolute; bottom:0;opacity:0.5;filter:alpha(opacity=50);}
+   .main_l_p{position:absolute; bottom:10px; right:10px; font-size:16px; color:#fff;}
+   .main_l_p:hover{ color:#FC9;}
+   .main_r_img_div{ width:302px; height:234px; border: 1px solid #e5e5e5;padding: 4px 4px 0px; margin-left:12px; float:left; margin-bottom:17px; display:inline;}
+   .main_r_img_div:hover{ background:#CCF;}
+   .main_r_img{ width:300px; height:195px;}
+   .main_r_box{ float:left; width:649px; margin-bottom:-17px;}
+   .main_r_p{ font-size:12px; color:#787878; margin-top:14px;}
+   .main_r_img_div:hover .main_r_p{ color:#F09;} 
+   .yinying{ position:relative;}
+   .yinying_tu{ background:url(img/yinying.png) no-repeat; position:absolute; bottom:-247px; height:7px; width:310px;}
+   
+   
+   
+   
+   
+   /*content*/
+    .content_box{ margin-left:-12px;}
+    .content_div{ width:217px; height:390px; border:1px solid #e5e5e5; padding:6px 6px 0px; float:left; margin-left:12px; display:inline;}
+	.content_div:hover{ background:#ccf;}
+	.content_img{width:215px; height:360px;}
+	.content_p{color:#787878; font-size:12px; margin-top:7px;}
+	.content_div:hover .content_p{ color:#C09;} 
+   /*price*/
+   .price_box{width:960px; margin:0 auto;}
+   .price_t_img_div{ width:302px; height:234px; border: 1px solid #e5e5e5;padding: 4px 4px 0px; float:left;}
+   .price_t_img_div:hover{ background:#CCC;}
+   .price_t_box{ margin-bottom:17px;}
+   .price_t_r{ float:left; margin-left:20px; width:620px;}
+   .price_h3{ font-size:16px; color:#3c2112; font-weight:bold; padding-bottom:16px;}
+   .price_p{ font-size:12px; color:#3c2112; line-height:24px;}
+   .price_a{ float:right; font-size:14px; color:#83471d;}
+   .price_t_img_div:hover .price_box_p{ color:#F69; display:inline;} 
+   .price_i{ float:right; font-size:12px; font-weight:bold; color:#ba1911;margin-top:14px;}
+   .price_box_p{font-size:12px; color:#787878; margin-top:14px; width:206px; float:left;}
+   .price_box_b{ float:left;}
+    .price_b_img_div{width:302px; height:234px; border: 1px solid #e5e5e5;padding: 4px 4px 0px; float:left; margin-left:13px;}
+	.price_bottom_box{ margin-left:-15px;}
+	.price_b_img_div:hover .price_box_p{ color:#F69;}
+	.price_b_img_div:hover{ background:#CCC;}
+	
+   /*raffel*/
+   
+   .raffle_box{ width:960px; margin:0 auto;}
+   .raffle_logo{ margin-top:28px;}
+   .raffle_logo2{ margin-left:395px; margin-top:28px;}
+   .raffle_logo3{ margin-left:163px; margin-top:28px;}
+   .raffle_h3{height:56px; border-bottom:1px solid #dbdbdb;}
+   .raffle_l{ width:486px; margin-left:-10px;float:left;}
+   .raffle_l_box{ width:142px; height:125px; border: 1px solid #e5e5e5; padding-top:6px; float:left; margin-left:10px; padding:4px 4px 0px; margin-top:14px;}
+   .raffle_l_box:hover{ background:#3CF;}
+   .raffle_l_box:hover .raffle_p{ color:#fff;} 
+   .raffle_p{ color:#787878; font-size:12px; overflow: hidden;text-overflow: ellipsis;
+ white-space: nowrap; margin-top:4px;}
+  .raffle_center_box{ width:220px; height:255px; border: 1px solid #e5e5e5; float:left; margin-left:16px; padding-top:16px; margin-top:14px;}
+  .raffle_a{ font-size:14px; color:#5093d5; height:18px;}
+  .raffle_a2{ display:block; width:63px; height:24px; background:#fd505b; border:1px solid #ea192d; text-align:center; line-height:24px; color:#fff; font-size:12px; font-weight:bold; border-radius:4px; margin-top:4px;}
+  .raffle_img_logo{ float:left; width:50p; height:50px; margin-left:15px;}
+  .raffle_f{ float:left; margin-left:10px;}
+  .raffle_a_i{ display:block; float:right;width:16px; height:20px; background:url(img/v_logo.png) no-repeat 0px 4px;}
+  .iframe_box{ width:198px; height:74px; margin-left:10px; margin-top:20px; border: 4px solid #CCC}
+  .fans_p{ width:188px; margin-top:14px; margin-left:15px;}
+  .fans_p a{ color:#5093d5; float:right;}
+  .fans_div{ width:200px; margin-left:2px; margin-top:8px;}
+  .fans_div1{ width:50px; height:68px; text-align:center; float:left; margin-left:16px; display:inline-block; }
+  .fans_a{ color:#5093d5;}
+  .raffle_r{ float:left; margin-left:15px; margin-top:14px;}
+  .raffle_li{height:30px;}
+  .raffle_li_a:hover{ color:#F63;}
+  .raffle_li_a{color:#787878; font-size:14px;}
+  /*frendlink*/
+  .frend_box{ width:960px; margin:0 auto;}
+  .frend_h3{ height:56px; border-bottom:1px solid #dbdbdb; margin-bottom:18px;}
+  .frend_logo{margin-top:28px;}
+  .frend_logo_a{ float:right; font-size:12px; color:#9b9b9b; margin-top:28px;}
+  .frend_link_t{ font-size:12px; color:#83471d; margin-right:26px; line-height:24px;}
+  .frend_link_t:hover{ color:#C96;}
+  /*bottom*/
+  .bottom_bigbox{ height:176px; border-top:1px solid #ddd; background:#eee; margin-top:16px;}
+  .bottom_box{ width:960px; margin:0 auto;}
+  .bottom_dd{ border-bottom:1px solid #705c51; width:118px; line-height:48px;}
+  .bottom_a{font-size:14px; color:#787878; font-weight:bold;}
+  .bottom_a:hover{ color:#F6C;}
+  .bottom_dt{ line-height:25px;}
+  .bottom_a2{font-size:12px; color:#787878;}
+  .bottom_a2:hover{ color:#F6C;}
+  .bottom_dl{ float:left; margin-left:20px;}
+  .bian{ margin-left:45px; margin-top:18px;  float:left;}
+  .bottom_qq{ float:left; margin-left:72px; margin-top:24px;}
+  .bottom_qq_t{ font-size:14px; color:#939393;}
+  .bottom_qq_box{ float:left; margin-left:10px;}
+  .daqq{ float:left;}
+  .bottom_qq_t2{ font-size:8px; color:#939393;}
+  .bottom_qq_box a{ color:#9a6735;}
+  .bottom_dl1{float:left;}
+  
+  /*footer*/
+  .footer_bigbox{ height:124px; background:#3c2112;}
+  .footer_box{ width:960px; margin:0 auto; text-align:center;}
+  .footer_a{ color:#fff; font-size:12px; }
+  .footer_p{padding-top:20px;}
+  .footer_p2{padding-top:10px; color:#fff;}
+ 
+ 
+ /*linao*/
+ .libao{ position:fixed; top:50%; right:0;}
+   
+   
+  </style>
+ 
+</head>
+
+<body>
+  <!--head-->
+  <a href="#"><div class="head_box"></div></a>
+  <!--nav-->
+  <div class="navbox">
+     <div class="nav clearfix">
+        <ul class="nav_ul clearfix">
+           <li class="nav_li">
+            <a class="nav_lia1" href="#">首页</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">影楼报价</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">作品展示</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">场馆介绍</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">客片欣赏</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">积分商城</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">官方汇款</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">网络预约</a>
+            <i class="nav_i"></i>
+           </li>
+           
+           <li class="nav_li clearfix">
+            <a class="nav_lia" href="#">官方微博</a>
+            <i class="nav_i"></i>
+           </li>
+        </ul> 
+        
+        <a class="nav_collection" href="#">收藏</a> 
+           
+      </div>  
+   </div> 
+   
+  <!--scoolpicture-->
+  
+  <a href="#">
+  <div class="scrollpicture"></div>
+  </a>
+  
+  <!--service--> 
+  <div class="service_box">
+    <ul>
+      <li class="service_li clearfix">
+          <img class="serviceimg" src="img/dianhua2.png"/>
+         <h4 class="srvice_h1 clearfix">
+         <i class="service_i">IF YOU HAVE ANY QUESTIONS,<br />
+          PLEASE CONTACT WITH US.</i>
+          <p class="service_p">400-0905-520(周六日不休)</p>
+         </h4>
+         <em class="service_em"></em>
+       </li>
+       
+       <li class="service_li clearfix">
+          <img class="serviceimg" src="img/ditu.png"/>
+         <h4 class="srvice_h1 clearfix">
+         <i class="service_i">WORK TIME<br />
+          AM.9:00~PM.10:00</i>
+          <p class="service_p">公司地址:北京市东城区东四南大街143号</p>
+         </h4>
+         <em class="service_em"></em>
+       </li>
+       
+       <li class="service_li clearfix">
+          
+         <h4 class="srvice_h1 clearfix">
+         <i class="service_i2">SERVICE</i>
+          <p class="service_p">在线客服</p>
+         </h4>
+        <a href="#"><img class="service_qqimg" src="img/online1.gif"/></a>
+        <a href="#"><img class="service_qqimg" src="img/online2.gif"/></a>
+        <a href="#"><img class="service_qqimg" src="img/online3.gif"></a>
+        <a href="#"><img class="service_qqimg" src="img/online4.gif"/></a>
+       </li> 
+     </ul>   
+   </div>
+   
+  <!--banner-->  
+  <div class="banner_box">
+    <div class="banner_imgbox clearfix">
+     <a href="#"><img class="banner_img" src="img/2014-11-03-16-19-29.jpg" /></a>
+     <a href="#"><img class="banner_img" src="img/2014-11-03-16-18-57.jpg" /></a>
+     <a href="#"><img class="banner_img" src="img/2014-05-29-12-05-25.jpg" /></a>
+     </div>
+     <a href="#"><img src="img/banner.jpg" /></a>
+  </div> 
+  
+  <!--main-->
+  <div class="main_box clearfix">
+   <h3 class="main_h3 clearfix">
+     <img class="main_logo" src="img/hometitle_03.gif" />
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;唐山</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;西安</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;洛阳</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;北京</a>
+   </h3> 
+   
+   
+   
+   
+     <div class="main_l_box">
+      <a href="#"><img class="l_point" src="img/arr_l.gif" /></a>
+      <a href="#"><img class="r_point" src="img/arr_r.gif" /></a>
+     <div class="main_l_div"></div>
+      <a href="#"><p class="main_l_p">场馆包间</p></a>
+      <a href="#"><img class="main_l_img" src="img/2014-11-01-17-36-10.jpg" /></a>
+     </div>  
+   
+   
+  
+  <div class="main_r_box">
+   <div class="yinying">
+    <div class="main_r_img_div"><p class="yinying_tu"></p>
+    <img class="main_r_img" src="img/2014-11-01-17-26-23.jpg" />
+    <a href="#"><p class="main_r_p">洛丽塔</p></a>
+    
+    </div>
+    </div>
+    
+    <div class="yinying">
+    <div class="main_r_img_div"><p class="yinying_tu"></p>
+    <img class="main_r_img" src="img/2014-11-01-17-43-05.jpg" />
+    <a href="#"><p class="main_r_p">克里斯汀</p></a>
+    </div>
+    </div>
+    
+    <div class="yinying">
+    <div class="main_r_img_div"><p class="yinying_tu"></p>
+    <img class="main_r_img" src="img/2014-11-01-17-30-11.jpg" />
+    <a href="#"><p class="main_r_p">夏· 宫</p></a>
+    </div>
+    </div>
+    
+    <div class="yinying">
+    <div class="main_r_img_div"><p class="yinying_tu"></p>
+    <img class="main_r_img" src="img/2014-11-01-17-40-57.jpg"/>
+    <a href="#"><p class="main_r_p">伯爵庄园</p></a>
+    </div>
+    </div>
+    
+    
+    </div> 
+    
+  </div>
+  
+  <div class="main_box clearfix">
+   <h3 class="main_h3 clearfix">
+     <img class="main_logo" src="img/hometitle_06.gif" />
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;唐山</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;西安</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;洛阳</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;北京</a>
+   </h3> 
+   
+   
+   
+   
+     <div class="main_l_box">
+      <a href="#"><img class="l_point" src="img/arr_l.gif" /></a>
+      <a href="#"><img class="r_point" src="img/arr_r.gif" /></a>
+     <div class="main_r_div"></div>
+      <a href="#"><p class="main_l_p">婚礼纪实风</p></a>
+      <i class="main_yinying"></i>
+      <a href="#"><img class="main_l_img" src="img/2014-08-15-14-02-54.jpg"/></a>
+     </div>  
+   
+   
+  
+  <div class="main_r_box">
+    <div class="main_r_img_div">
+    <img class="main_r_img" src="img/2014-08-13-20-09-36.jpg" />
+    <a href="#"><p class="main_r_p">曼谷乐园</p></a>
+    </div>
+    
+    <div class="main_r_img_div">
+    <img class="main_r_img" src="img/2014-11-01-17-43-05.jpg" />
+    <a href="#"><p class="main_r_p">印象风</p></a>
+    </div>
+    
+    <div class="main_r_img_div">
+    <img class="main_r_img" src="img/2014-08-15-14-00-32.jpg" />
+    <a href="#"><p class="main_r_p">婚礼纪实风</p></a>
+    </div>
+    
+    <div class="main_r_img_div">
+    <img class="main_r_img" src="img/2014-07-18-11-47-06.jpg"/>
+    <a href="#"><p class="main_r_p">浪漫花海</p></a>
+    </div>
+    
+    </div> 
+    
+  </div>
+  
+  <!--content-->
+  
+  <div class="main_box clearfix">
+   <h3 class="main_h3 clearfix">
+     <img class="main_logo" src="img/hometitle_08.gif" />
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;唐山</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;西安</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;<span class="m_a_span">|</span>&nbsp;&nbsp;洛阳</a>
+     <a class="main_h3_a" href="#">&nbsp;&nbsp;北京</a>
+   </h3> 
+   <div class="content_box clearfix">
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-05-23-12-30-08.jpg" /></a>
+       <p class="content_p">客片4</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-10-31-17-35-11.jpg"/></a>
+       <p class="content_p">客片1</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-10-31-17-37-01.jpg" /></a>
+       <p class="content_p">客片3</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-10-31-17-38-48.JPG" /></a>
+       <p class="content_p">客片2</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-10-31-17-40-02.JPG" /></a>
+       <p class="content_p">客片</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-05-23-12-56-04.jpg" /></a>
+       <p class="content_p">青春的回忆</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-05-23-12-47-52.jpg" /></a>
+       <p class="content_p">绿</p>
+     </div>
+     
+     <div class="content_div">
+       <a href="#"><img class="content_img" src="img/2014-10-31-17-41-22.jpg" /></a>
+       <p class="content_p">客片</p>
+     </div>
+   
+   </div>
+   
+  </div> 
+  
+  <!--price-->
+  
+  
+  <div class="price_box clearfix clearfix">
+   <h3 class="main_h3 clearfix">
+     <img class="main_logo" src="img/hometitle_08.gif" />
+     <a class="main_h3_a" href="#">&gt;&gt;更多报价</a>
+   </h3> 
+    
+    <div class="price_t_box clearfix">
+       <div class="price_t_img_div clearfix">
+          <img class="main_r_img" src="img/2014-11-01-17-51-42.jpg"  />
+           <a href="#"><p class="price_box_p">原价29999，网络特惠价10999</p></a>
+           <i class="price_i">RMB:10999</i>
+        </div>
+       <div class="price_t_r">
+        <h3 class="price_h3">蒙娜丽莎"克里斯汀会所</h3>
+        <p class="price_p">婚纱是结婚仪式及婚宴时新娘穿着的服饰，婚纱可单指身上穿的服饰配件，也可以包括头纱、捧花的部分。婚纱的颜色，款式等视乎各项因素，包括文化，宗教及时装潮流等。婚纱来自西方，有别于以红色为主的中式传统裙褂。婚礼虽是世界各国自古以来就存在的仪式，但新娘在婚礼上穿婚纱的历史却不到200年时间。婚纱礼服的雏形应该上朔到公元前1700~公元前1550年古希腊米诺三代王朝贵族妇女所穿的前胸袒露，袖到肘部、胸、腰部位由线绳系在乳房以下，下身着钟形衣裙，整体紧身合体的服装。如今新娘所穿的下摆拖地的白纱礼服原是天主教徒的典礼服。由于古代欧洲一些国家是政教合一的国体，人们结婚必须到教堂接受神父或牧师的祈祷与祝福，这样才能算正式的合法婚姻，所以，新娘穿上白色的典礼服向神表示真诚与纯洁。</p>
+        <a class="price_a" href="#">&gt;&gt;详情咨询</a>
+        
+       </div> 
+       </div>
+      
+      <div class="price_bottom_box">
+       <div class="price_b_img_div clearfix">
+             <img class="main_r_img"  src="img/2014-11-01-17-56-49.jpg" />
+             <a href="#"><p class="price_box_p">原价29999，网络特惠价10999</p></a>
+             <i class="price_i">RMB:10999</i>
+          </div>
+          
+           <div class="price_b_img_div clearfix">
+             <img class="main_r_img" src="img/2014-11-01-17-53-05.jpg" />
+             <a href="#"><p class="price_box_p">原价29999，网络特惠价10999</p></a>
+             <i class="price_i">RMB:10999</i>
+          </div>
+          
+           <div class="price_b_img_div clearfix">
+             <img class="main_r_img"  src="img/2013-06-06-16-35-45.jpg"/>
+             <a href="#"><p class="price_box_p">原价29999，网络特惠价10999</p></a>
+             <i class="price_i">RMB:10999</i>
+          </div>
+      </div>  
+        
+      </div> 
+      
+  <!--raffle--> 
+  
+  <div class="raffle_box clearfix">
+     <h3 class="raffle_h3 clearfix">
+        <img class="raffle_logo" src="img/hometitle_14.gif" />
+        <img class="raffle_logo2" src="img/hometitle_17.gif" />
+        <img class="raffle_logo3"  src="img/hometitle_19.gif" />
+        
+     </h3>
+     
+     <div class="raffle_l clearfix">
+       <a href="#"><div class="raffle_l_box">
+         <img src="img/2013-06-07-10-16-02.jpg" />
+         <p class="raffle_p">CHANLE女士香水女士香水婆婆婆婆婆婆婆婆婆婆婆婆婆婆</p>
+       </div></a>
+       
+       <a href="#"><div class="raffle_l_box">
+         <img src="img/2013-06-06-17-29-23.jpg" />
+         <p class="raffle_p">CHANLE女士香水女士香水婆婆婆婆婆婆婆婆婆婆婆婆婆婆</p>
+       </div></a>
+       
+       <a href="#"><div class="raffle_l_box">
+         <img src="img/2013-06-06-17-26-55.jpg" />
+         <p class="raffle_p">CHANLE女士香水女士香水婆婆婆婆婆婆婆婆婆婆婆婆婆婆</p>
+       </div></a>
+       
+       <a href="#"><div class="raffle_l_box">
+         <img src="img/2013-06-06-17-24-19.jpg" />
+         <p class="raffle_p">CHANLE女士香水女士香水婆婆婆婆婆婆婆婆婆婆婆婆婆婆</p>
+       </div></a>
+       
+       <a href="#"><div class="raffle_l_box">
+         <img src="img/2013-06-06-17-23-13.jpg" />
+         <p class="raffle_p">CHANLE女士香水女士香水婆婆婆婆婆婆婆婆婆婆婆婆婆婆</p>
+       </div></a>
+       
+       <a href="#"><div class="raffle_l_box">
+         <img src="img/2013-06-06-16-44-48.jpg"/>
+         <p class="raffle_p">CHANLE女士香水女士香水婆婆婆婆婆婆婆婆婆婆婆婆婆婆</p>
+       </div></a>
+     
+     </div>
+     
+     <div class="raffle_center_box clearfix">
+      <a href="#"> <img class="raffle_img_logo" src="img/tubiao.png" /></a>
+      <p class="raffle_f clearfix">
+      <a class="raffle_a" href="#">北京蒙娜丽莎摄影<i class="raffle_a_i"></i></a>
+      <a class="raffle_a2" href="#">+ 加关注</a>
+      </p>
+      
+      <iframe frameborder="0" src="banner.html" class="iframe_box"></iframe>
+      
+      <p class="fans_p clearfix">TA的粉丝数（122323）<a href="#">全部&gt;&gt;</a></p>
+      
+      <div class="fans_div clearfix">
+         <div class="fans_div1">
+          <img src="img/touxiang1.png" />
+          <a class="fans_a" href="#">叶良辰</a>
+         </div>
+         
+         <div class="fans_div1">
+          <img src="img/nv.png" />
+          <a class="fans_a" href="#">赵日天</a>
+         </div>
+         
+          <div class="fans_div1">
+          <img src="img/hudie.png" />
+          <a class="fans_a" href="#">葫芦娃</a>
+         </div>
+      </div>
+      </div> 
+      
+      <ul class="raffle_r">
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+       <li class="raffle_li"> <a class="raffle_li_a" href="#">.新郎拍摄婚纱注意事项</a></li>
+      </ul>  
+        
+    </div>  
+    
+ <!--frendlink-->
+  <div class="frend_box">
+    <h3 class="frend_h3 clearfix">
+       <img class="frend_logo" src="img/hometitle_24.gif" />
+        <a class="frend_logo_a" href="#">友情链接：qq852801151</a>
+    </h3>
+    
+    <a class="frend_link_t" href="#">北京儿童摄影</a>
+    <a class="frend_link_t" href="#">北京儿童摄影</a>
+    <a class="frend_link_t" href="#">北京儿童摄影</a>
+    <a class="frend_link_t" href="#">北京儿童摄影</a>
+    <a class="frend_link_t" href="#">婚纱团购</a>
+    <a class="frend_link_t" href="#">婚纱团购</a>
+    <a class="frend_link_t" href="#">婚纱团购</a>
+    <a class="frend_link_t" href="#">北京智能社婚纱社</a>
+     <a class="frend_link_t" href="#">北京智能社婚纱社</a>
+      <a class="frend_link_t" href="#">北京智能社婚纱社</a>
+       <a class="frend_link_t" href="#">北京智能社婚纱社</a>
+        <a class="frend_link_t" href="#">北京智能社婚纱社</a>
+  </div>  
+  
+  <!--bottom-->
+  <div class="bottom_bigbox">
+    <div class="bottom_box clearfix">
+       <dl class="bottom_dl1">
+         <dd class="bottom_dd"><a class="bottom_a" href="#">蒙娜丽莎/主页</a></dd>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">北京婚纱摄影网</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">关于蒙娜丽莎</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">联系我们</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">婚纱客片分享</a></dt>
+       
+       </dl>
+       
+       <dl class="bottom_dl">
+         <dd class="bottom_dd"><a class="bottom_a" href="#">作品展示</a></dd>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">外景婚纱作品</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">内景婚纱作品</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">高端婚纱摄影</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">写真客片分享</a></dt>
+       </dl>
+       
+       <dl class="bottom_dl">
+         <dd class="bottom_dd"><a class="bottom_a" href="#">新闻动态</a></dd>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">最新优惠</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">最新动态</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">服务小贴士</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">官方汇款号</a></dt>
+       </dl>
+       
+       <dl class="bottom_dl">
+         <dd class="bottom_dd"><a class="bottom_a" href="#">SCENE场景介绍</a></dd>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">内景婚纱照</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">外景婚纱照</a></dt>
+         <dt class="bottom_dt"><a class="bottom_a2" href="#">外景区</a></dt>
+       </dl>
+       
+       
+       <div class="bottom_srrvice clearfix">
+         <img class="bian" src="img/bian.png" />
+         
+         <div class="bottom_qq clearfix">
+            <a href="#"><img class="daqq" src="img/daqq.png" /></a>
+            <div class="bottom_qq_box">
+               <p class="bottom_qq_t">ONLINE SERVICE</p>
+               <a href="#"> <img src="img/footq_32.gif" /></a>
+               <a href="#"><img src="img/footq_34.gif" /></a>
+               <a href="#"><img src="img/footq_39.gif" /></a>
+               <a href="#"><img src="img/footq_36.gif" /></a>
+               <a href="#"><img src="img/footq_36.gif" /></a>
+               
+            
+            </div>
+         </div>
+         
+         <div class="bottom_qq clearfix">
+            <a href="#"><img class="daqq" src="img/ditu.png"/></a>
+            <div class="bottom_qq_box">
+               <p class="bottom_qq_t2">WORK TIME<br />AM9:00~PM:10:00</p>
+               <a href="#">公司地址:北京市东城区东四南大街</a>
+          
+            </div>
+         </div>
+       
+       </div>
+       
+    </div>  
+  
+  
+  
+  </div> 
+  
+ <!--footer-->
+ 
+ <div class="footer_bigbox">
+    <div class="footer_box">
+       <p class="footer_p">
+          <a class="footer_a" href="#">北京婚纱摄影 |</a>
+          <a class="footer_a" href="#">婚纱照展示 |</a>
+           <a class="footer_a" href="#">影楼报价  |</a>
+           <a class="footer_a" href="#">摄影动态 |</a>
+           <a class="footer_a" href="#">联系我们</a> 
+       </p>
+       
+       <p class="footer_p2">版权所有@ 2007-2012 北京蒙娜丽莎摄影有限公司 Map | Tag <img src="img/pic1.gif" />站长统计</p>
+       
+       <p class="footer_p2">北京蒙娜丽莎唯一官网:http://www.mnlsbj.com/ <a class="footer_a" href="#">京ICP备12018289号 </a></p>
+       
+       <p class="footer_p2">热门推荐:北京婚纱摄影、婚纱照或婚纱摄影外景，尽在蒙娜丽莎！网站技术、SEO优化支持: <a class="footer_a" href="#"> 东辉创想</a></p>
+    
+    </div>
+ 
+ </div>
+ 
+ <!--libao-->
+ 
+  <a href="#"> 
+    <div class="libao"><img src="img/icon_on_10000741397717740.png" /></div>
+  </a>
+ 
+     
+       
+    
+    
+    
+      
+     
+      
+      
+     
+     
+     
+     
+     
+  
+  
+       
+       
+         
+        
+    
+       
+      
+   
+   　 
+    
+    
+    
+    
+    
+    
+    
+  
+     
+   
+   
+  
+  
+   
+     
+    
+  
+  
+   
+  
+  
+   
+  
+  
+     
+   
+  
+  
+        
+         
+      
+    
+   
+  
+  
+     
+     
+     
+  
+  
+     
+  
+  
+    
+
+
+</body>
+</html>

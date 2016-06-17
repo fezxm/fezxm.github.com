@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script src="jquery-1.7.2.js"></script>
+<script>
+    $(function (){
+    var oBtn=$('li');
+    var oSpan=$('span');
+
+    oBtn.each(function(index){
+        oBtn.eq(index).hover(function(ev){
+            //移入 右 下
+            var n=getN(ev);
+              console.log(n);
+            switch(n){
+                case 0:
+                    oSpan.eq(index).css({'left':'400px','top':'0'});
+                    break;
+                case 1:
+                    oSpan.eq(index).css({'left':0,'top':'400px'});
+                    break;
+                case 2:
+                    oSpan.eq(index).css({'left':'-400px','top':0});
+                    break;
+                case 3:
+                    oSpan.eq(index).css({'left':0,'top':'-400px'});
+                    break;
+            }
+            oSpan.eq(index).stop().animate({left:0, top:0});
+        },function(ev){
+            //移出               1.8 0.7
+            var n=getN(ev);
+            switch (n){
+                case 0:
+                    oSpan.eq(index).stop().animate({'top':0,'left':'400px'});
+                    break;
+                case 1:
+                    oSpan.eq(index).stop().animate({'top':'400px','left':0});
+                    break;
+                case 2:
+                    oSpan.eq(index).stop().animate({'top':0,'left':'-400px'});
+                    break; 
+                case 3:
+                    oSpan.eq(index).stop().animate({'top':'-400px','left':0});
+            }
+        })
+         function getN(ev)
+            {
+                var x=oBtn.eq(index).offset().left+oBtn.eq(index).outerWidth()/2-ev.pageX;
+                var y=oBtn.eq(index).offset().top+oBtn.eq(index).outerHeight()/2-ev.pageY;
+              
+                var a=d2a(Math.atan2(y, x));
+                return Math.round((a+180)/90)%4;
+            }
+
+    });
+    
+    function d2a(d)
+    {
+        return d*180/Math.PI;
+    }
+
+});
+
+</script>
+<style>
+body{ height: 2000px;}
+    nav { height: 500px;}
+     .m-list{width:1200px; -margin:300px auto; overflow: hidden;}
+    
+    
+    .enMod{ height: 385px;}
+    .m-list li{ width:285px; height:385px; float:left; margin-left:20px; position: relative; 
+                overflow: hidden;}
+    .m-list .fist{ margin-left:0;}
+    .m-list .m-pic{ display:block; margin-top:45px; height:130px; border:10px dashed rgba(0,0,0,0); background:url(img/xx.png); }
+    .m-list h3{ margin-top:30px;}
+    .m-list h3 a{ dispaly:block; height:16px; font-size:20px; line-height:20px; color:#fff; }
+    .m-list p{ margin-top:10px; font-size:12px; line-height:30px; color:#a0a8ab;}
+    .m-list span{ width: 100%; height: 100%; position: absolute; top:-400px; left: 0; 
+                background: rgba(255,0,255,0.3); }
+
+</style>
+</head>
+<body>
+<nav></nav>
+            <!-- Exhibition module -->
+        <div class="enMod">
+            <ul class="m-list clearFix" id="m-j-hook">
+                <li class="fist">  <!-- Product picture -->   
+                    <a href="javascript:;" class="m-pic"><img src="img/pic01.jpg" alt=""></a>
+                    <h3><a href="javascript:;">Welcome to Halcyonic</a></h3>
+                    <p>This is Halcyonic, a free site template by N33 for It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:;" class="m-pic"><img src="img/pic02.jpg" alt=""></a>
+                    <h3><a href="javascript:;">Welcome to Halcyonic</a></h3>
+                    <p>This is Halcyonic, a free site template by N33 for It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:;" class="m-pic"><img src="img/pic03.jpg" alt=""></a>
+                    <h3><a href="javascript:;">Welcome to Halcyonic</a></h3>
+                    <p>This is Halcyonic, a free site template by N33 for It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:;" class="m-pic"><img src="img/pic04.jpg" alt=""></a>
+                    <h3><a href="javascript:;">Welcome to Halcyonic</a></h3>
+                    <p>This is Halcyonic, a free site template by N33 for It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+</body>
+</html>

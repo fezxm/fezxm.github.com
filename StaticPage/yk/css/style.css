@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+/*head*/
+.lyf_top_box{ width:970px; margin:0 auto;}
+.lyf_logo_box{ height:74px;}
+.lyf_yk_logo{ width:141px; height:33px; background:url(../img/lyf_youku_logo.png) no-repeat; margin-top:20px; float:left;}
+.lyf_yk_logo a{ width:100%; height:100%; display:block; text-indent:-999em;}
+
+.lyf_search_box{ float:left; width:325px; height:40px; position:relative; margin-top:10px; margin-left:178px;}
+.lyf_search_box input{ width:230px; height:36px; border:2px solid #a0a0a0; font-size:16px;}
+.lyf_top_btn{ width:90px; height:40px; background:url(../img/lyf_xuebitu.png) no-repeat -54px 0px; position:absolute; top:0; cursor:pointer;}
+
+.lyf_top_ul{ float:left; margin-top:24px; margin-left:25px;}
+.lyf_top_ul li{ float:left;}
+.lyf_top_ul a{ font-size:14px;}
+.lyf_top_lione i{ width:16px; height:16px; background:url(../img/lyf_xuebitu.png) no-repeat; float:left; margin-right:2px;}
+.lyf_top_lione em{ width:8px; height:4px; background:url(../img/lyf_xuebitu.png) no-repeat -19px 0px; float:right; margin-left:4px; margin-top:8px;}
+.lyf_top_lione{ margin-right:20px;}
+.lyf_top_litwo{ margin-right:21px;}
+.lyf_top_lithree{ margin-right:24px;}
+.lyf_top_lifour i{ width:16px; height:16px; background:url(../img/lyf_xuebitu.png) no-repeat -30px 0px; float:left; margin-right:4px;}
+.lyf_top_lifour em{ width:2px; height:15px; background:url(../img/lyf_xuebitu.png) no-repeat -49px 0px; float:left; margin-top:2px; margin-right:4px;}
+.lyf_top_lifour{ margin-right:6px;}
+
+
+.lyf_nav_box{ height:34px; border-bottom:3px solid #e6e6e6; line-height:34px;}
+.nav_text{ float:left;}
+.nav_text a{ font-size:16px; float:left; padding-right:20px;}
+.nav_text .nav_one{ line-height:34px; border-bottom:3px solid #06a7e1; color:#06a7e1; margin-right:20px; padding-right:0px;}
+.nav_lione i{ width:5px; height:3px; background:url(../img/lyf_xuebitu.png) no-repeat -146px 0px; float:right; margin-top:16px; margin-left:3px; margin-right:4px;}
+.nav_ul{ float:left;}
+.nav_ul li{ float:left;}
+.nav_litwo em{ width:8px; height:4px; background:url(../img/lyf_xuebitu.png) no-repeat -19px 0px; float:right; display:block; margin-top:16px; margin-left:4px;}
+.nav_litwo{ margin-right:21px;}
+.nav_last{ width:80px; height:27px; border:1px solid #d1d1d1; background:#f2f2f2; color:#06a7e1; line-height:27px; text-align:center; float:right;}
+
+/*top_menu*/
+.top_menu_box{ width:970px; margin:0 auto; margin-top:20px;}
+.top_menu_lbox{ float:left; width:640px;}
+.top_nav_big_one{ position:relative; float:left;}
+.top_menu_bigimgte{ width:414px; height:42px; position:absolute; left:0; bottom:0; padding-left:6px;}
+.top_nav_big_one p{ font-size:14px; color:#f1f1f1; margin-bottom:3px;}
+.big_a1 i{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0px -20px; display:inline-block;margin-right:4px;}
+.big_a1{ color:#fff; float:left; margin-right:7px;}
+.big_a2 i{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0 -34px; display:inline-block; margin-right:4px;}
+.big_a2,.big_a3{ color:#909090; float:left; margin-right:13px;}
+.big_a3 i{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0 -48px; display:inline-block; margin-right:4px;}
+.big_righta{ width:56px; height:20px; background:#06a7e1; font-size:12px; color:#fff; line-height:20px; text-align:center; float:right;}
+.big_righta:hover{ background:#F63;}
+.top_menu_llbox{ width:420px; float:left;}
+.top_menu_llul{ margin-top:20px; margin-left:-20px;}
+.top_menu_llul li{ float:left; position:relative;}
+.top_menu_llul li p{ position:absolute; left:7px; bottom:5px; color:#fff;}
+.top_menu_llul li i{ width:200px; height:4px; background:url(../img/drama.8.png) no-repeat; position:absolute; left:0; top:-4px;}
+.opa_box{ width:200px; height:112px; background:#000; opacity:0.5; filter:alpha(opacity:40); position:absolute; top:0px; left:0px;}
+.opa_text{ position:absolute; top:0; left:0; width:200px; height:112px;}
+.opa_text h4{ color:#fff; font-size:14px;}
+.opa_text p{ font-size:12px; color:#fff; line-height:20px;}
+.opa_box{ display:none;}
+.top_menu_llul li{ float:left; margin-left:20px;}
+.top_menu_llul{ float:left;}
+
+.menu_rr_ul{ margin-top:-20px; margin-left:20px; float:left;}
+.menu_rr_ul li{ margin-top:20px;}
+.top_menu_rbox{ float:right;}
+.top_video_img{ margin-top:20px;}
+/*个人中心*/
+.my_self_box{ width:980px; margin:0 auto; margin-top:50px;}
+.my_self_title{ height:30px; line-height:30px; margin-bottom:20px;}
+.my_self_title h3{ font-size:24px; color:#9090b2; float:left;}
+.myself_ul{ float:left; margin-left:20px;}
+.myself_ul li{ width:76px; height:30px; float:left; text-align:center; line-height:30px; font-size:14px;}
+.active{ background:#06a7e1;}
+.active a{ color:#fff;}
+.my_self_ul li{ width:200px; height:190px; background:#f5f5f5; float:left; margin-left:20px;}
+.my_self_li p{ height:48px; line-height:22px; margin-top:12px; padding:0 5px;}
+.my_self_li i{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0 -62px; display:inline-block; margin:0px 5px;}
+.my_self_li em{width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0 -76px; display:inline-block; margin-right:5px;}
+.my_self_ul{ margin-left:-20px;}
+.my_self_ul .my_last_box{ width:90px; height:190px; background:#f5f5f5; float:left;}
+.my_self_ul .my_last_box p{ width:2em; font-size:20px; text-align:center; color:#555; padding-top:63px; padding-left:25px;} 
+/*最佳原创*/
+.lei2{ width:120px; height:30px;}
+.nice_r_box{ float:left; width:310px;}
+.noic_pic{ float:left; margin-top:20px;}
+.nice_float{ float:left;}
+.nice_r_box h5{ font-size:14px;}
+.nice_r_box img{ float:left; margin-right:10px;}
+.nice_r_box p{ font-size:14px; color:#909090; margin-top:9px;}
+.nice_r_box li{ margin-left:20px; margin-top:20px; height:50px;}
+.nice_r_ul{ margin-top:-20px;}
+.nice_r_ul .nice_last_li{ margin-top:10px;}
+/*电视剧*/
+.move_right_box{ width:310px; float:right;}
+.move_r_title a{ float:left; font-size:14px; height:30px; line-height:30px; text-align:center; padding:0 10px;}
+.active{ color:#fff;}
+.move_r_title{ margin-bottom:10px;}
+.movie_li .i1{ width:20px; height:20px; background:#ef3f22; display:inline-block; color:#fff; line-height:20px; text-align:center; margin-right:10px;}
+.movie_li .i2{width:20px; height:20px; background:#03a7e1; display:inline-block; color:#fff; line-height:20px; text-align:center; margin-right:10px;}
+.movie_li a{ font-size:14px; color:#555555; line-height:20px;}
+.movie_li{ margin-top:10px; width:155px;}
+.movie_ul{ float:left;}
+.move_r_p{ line-height:50px;}
+.move_r_p a{ padding-right:18px;}
+/*韩剧*/
+.south_bigbox{ width:980px; margin:0 auto; margin-top:55px;}
+.south_lbox{ width:640px; float:left;}
+.south_margin{ margin-right:-20px;}
+.south_box{ width:200px; height:110px; position:relative; float:left; margin-right:20px; } 
+.south_i{ width:43px; height:43px; background:url(../img/lyf_xuebitu.png) no-repeat -158px 0px; position:absolute; top:0; left:0;}
+.south_em{ width:200px; height:4px; background:url(../img/drama.8.png) no-repeat; position:absolute; top:-4px; left:0px;}
+.south_text_box{ position:absolute; height:31px; bottom:7px; left:0px; padding:0 5px;}
+.south_h5{ font-size:14px; color:#fff;}
+.south_p{ color:#bbb; font-size:12px; width:190px;}
+.south_opa_box{ height:31px; width:200px; background:#000; opacity:0.1; filter:alpha( opacity:10); position:absolute; bottom:7px; left:0px;}
+.south_a{ float:right; font-size:12px; color:#ddd;}
+.south_rightbox{ width:310px; float:right;}
+.south_ul{ float:left;}
+.south_ul li{ margin-bottom:10px; margin-top:0px;}
+/*电影*/
+/*院线会员*/
+.south_box .south_i_v{width:43px; height:43px; background:url(../img/lyf_xuebitu.png) no-repeat -204px 0px; position:absolute; top:0; left:0;}
+.south_right_box{ width:145px; height:110px; background:#f5f5f5; float:left; margin-left:20px;}
+.south_right_a{ font-size:14px; display:block; line-height:30px; text-align:center}
+.south_marginbox{ margin-left:-20px;}
+/*娱乐搞笑*/
+.laugth_bigbox{ width:980px; margin:0 auto; margin-top:50px;}
+.laugh_lbox{ float:left; margin-top:-20px;}
+.laugh_p a{ font-size:14px; color:#3399e0; padding-left:51px;}
+.laugh_box{ width:200px; position:relative; float:left; margin-left:20px;}
+.laugh_p span{ float:right; color:#909090; font-size:14px;}
+.laugh_b_box{ width:195px; height:60px; background:#f5f5f5; padding-left:5px;}
+.laugh_b_box p{ line-height:35px; font-size:14px; }
+.laugh_b_box i{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0px -62px; display:inline-block;margin-right:8px;}
+.laugh_b_box em{width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0px -76px; display:inline-block; margin-right:8px;}
+.laugh_b_box span{ color:#90909f; font-size:12px; margin-right:16px;}
+.laugh_img{ position:absolute; top:0; left:0;}
+.laugh_ul{ margin-left:-20px; margin-top:20px;}
+.laugh_r_box{ float:right;}
+/*音乐*/
+.muice_big_box{ width:980px; margin:0 auto; margin-top:50px;}
+.muice_li{ height:167px; background:#f5f5f5; width:200px; float:left; margin-right:20px;}
+.muice_p{ line-height:35px; font-size:14px;}
+.muice_li i{ background:url(../img/lyf_xuebitu.png) no-repeat 0px -62px; width:12px; height:12px; display:inline-block; margin-right:4px;}
+.muice_li span{ color:#909090; margin-right:10px}
+.muice_li em{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0px -76px; display:inline-block; margin-right:4px;}
+.muice_lbox{ float:left;}
+.muice_img{ margin-top:20px;}
+.muice_rbox{ float:right;}
+.muice_rb_box{ width:310px; float:right; margin-top:15px;}
+.muice_rb_box p{ float:left;}
+/*体育*/
+.sports_bigbox{ width:980px; margin:0 auto; margin-top:50px;}
+.sport_li{ width:200px; height:190px; background:#f5f5f5;}
+.sport_li p{ line-height:35px; font-size:14px;} 
+.sports_bigbox .sport_li{ height:190px;}
+/*生活*/
+.life_bigbox{ width:980px; margin:0 auto; margin-top:50px;}
+.life_menu{ width:200px; float:left; margin-right:20px;}
+.life_menu h3,.life_r_box h3{ font-size:26px; color:#909090; float:left;}
+.life_menu_box{ position:relative; margin-top:20px;}
+.life_opa_text{ position:absolute; bottom:4px; left:0; padding-left:6px;}
+.life_opa_text i{ width:12px; height:12px; background:url(../img/lyf_xuebitu.png) no-repeat 0px -62px; display:inline-block; margin-right:4px;}
+.life_menu_box span{ font-size:12px; color:#909090;}
+.life_menu_box p{ font-size:14px; color:#fff;}
+.life_r_box{ float:left; height:290px;}
+.life_r_box a{ float:left; height:30px; line-height:30px; text-align:center; font-size:14px; padding:0 10px; }
+.life_li p{ float:left;}
+.life_li{ margin-top:10px;}
+/*广告*/
+.ad_box{ width:980px; margin:0 auto; margin-top:50px;}
+.footer_box{ width:980px; border-top:2px solid #ddd; height:354px; margin:0 auto; margin-top:20px;}
+.footer_lione{ width:200px; float:left; margin-right:40px;}
+.footer_litwo{ float:left; width:108px;}
+.footer_h3{font-size:14px; color:#909090; line-height:52px;} 
+.footer_ul li a{padding-right:5px; line-height:28px; }
+.fooer_link i{ width:14px; height:16px; background:url(../img/lyf_xuebitu.png) no-repeat -296px 0px; float:left; margin-right:4px; }
+.fooer_link li{line-height:25px;}
+.fooer_link{ float:left; margin-right:49px;}
+.erweima_box{ width:194px; float:left; text-align:center;}
+.erweima_box img{ float:left; margin-right:20px;}
+.erweima_box h3{ font-size:18px; text-align:center; float:right; margin-top:22px;}
+.erweima_box p a{ font-size:12px;}
+.footer_text{ margin-top:50px;}
+.er_text{ float:left;}
+.footer_last{ width:980px; text-align:center; margin-top:40px;}

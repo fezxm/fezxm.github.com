@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>h5+css3</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<style>
+    /* <!--head--> */    
+    .m-c-header{ height:155px;  background: url(img/2.jpg);}
+    .header{width: 1200px; margin: 0 auto; padding-top:33px;  border-bottom:2px solid #3e484a; background: url(img/2.jpg);}
+    h1{ float: left; width: 260px; height:120px; background: url(img/logo.png) no-repeat; 
+            text-indent:-99999px;  }
+    nav{ float:right; width:840px; height:120px;}
+    nav a{ display:block; float:left;  width:148px; height:60px;  margin:30px 10px; text-align:center;
+            line-height:60px; font-size:20px; border-radius:5px; color: #f1f1f1;
+            transition:.4s all ease;  text-shadow:2px 2px 5px #76a3b4; }
+     
+    nav a:link{ color: #f1f1f1;} /* 未放问过 */
+    nav a:visited{ color:#f1f1f1; } /* 已访问过 */
+     nav a:hover{transform:scale(1.2); box-shadow:0 5px 5px #FFF; color: #399;} /* 鼠标移入 IE7以上才支持所有标签 */
+    nav a:active{ color:#f00; }/* 鼠标点击    */
+     /* <!--head end--> */   
+
+    a:link{ color: #00f;} /* 未放问过 */
+    a:visited{ color:#00f; } /* 已访问过 */
+    a:hover{ color: #000;} /* 鼠标移入 IE7以上才支持所有标签 */
+    a:active{ color:#f00; }/* 鼠标点击    */
+    p{ height: 20px;  line-height: 20px;font-size: 20px; text-align: center; margin-bottom: 30px; }
+   .return{ display: block; height: 50px; line-height: 50px; text-align: center; font-size: 20px; }
+    @keyframes test {
+        from{
+            transform:perspective(800px) rotateY(0deg) rotateX(0deg);
+        }
+        to{
+            transform:perspective(800px) rotateY(-360deg) rotateX(360deg);
+            }
+        }
+    /*矩形*/    
+    .rec{ background:#f1f1f1; height: 650px;  position: relative;  }    
+    .rec3d{
+        width:200px;
+        height:200px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin-left: -100px;
+        margin-top:-100px;
+        transform-style:preserve-3d;
+
+        transform:perspective(800px) rotateY(0deg) rotateX(0deg);
+        animation: 5s test linear infinite;
+    }
+    .rec3d div{
+        position: absolute;
+        left:0;
+        top:0;
+        border: 1px solid #f1f1f1;    
+        width:100%;
+        height:100%;
+    }
+    .z-t{ background: red; transform: translateZ(100px);}
+    .z-b{ background: blue;  transform: translateZ(-100px);}
+    .x-l{ background: green; transform:translateX(-100px) rotateY(90deg); }
+    .x-r{background: pink;  transform:translateY(-100px) rotateX(-90deg);}
+    .y-l{ background: #000;  transform:translateY(100px) rotateX(-90deg); }
+    .y-r{background: #399;  transform:translateX(100px) rotateY(90deg);}
+    
+      
+     /*3d翻页*/
+     .m-3dpage{ height: 600px; background: #f9f9f9;} 
+    .box{width:700px;height:400px;background: url(images/0.jpg) no-repeat;margin: 0 auto;
+            position: relative;}
+    .page{position: absolute;right:0;top:0;width:50%;height:100%;transition: 1s all ease;
+            transform-origin: left center;transform-style:preserve-3d;z-index: 2;
+            transform:perspective(800px) rotateY(0deg); }
+    .page div{ position: absolute; left:0;top:0; width:100%;height:100%}
+    .page .front{ background: url(images/0.jpg) no-repeat right top; z-index: 2;backface-visibility: hidden}
+    .page .back{background: url(images/1.jpg) no-repeat left top;z-index:1; transform:scale(-1,1)}
+    .page2{ position: absolute; right:0;top:0; width:50%;height:100%;
+            background: url(images/1.jpg) no-repeat right top; z-index: 1;  }
+    .box:active .page{ transform:perspective(800px) rotateY(-180deg); }   
+    
+     /*3d颗粒*/
+    .m-3dparticle{ height: 600px; background: #f1f1f1;}
+    .m-3dparticle .box{ width:700px; height:400px; margin: 0 auto;  position: relative;}
+    .m-3dparticle .box span{ position: absolute; transform-style:preserve-3d; 
+            transform:perspective(800px) rotateY(0deg);}
+    .m-3dparticle .box span em{ position: absolute; left:0; top:0; width:100%; height:100%;}
+    .m-3dparticle .box span em.front{ background: url(images/0.jpg) no-repeat;
+             transform:translateZ(1px); }
+    .m-3dparticle .box span em.back{ background: url(images/1.jpg) no-repeat;
+             transform:translateZ(-1px) scale(-1,1);}
+    
+    /*3d图片环*/
+    .m-ring{ height: 760px; background: #000;position: relative; overflow: hidden; }
+    .m-ring p{ color: #fff;}
+    #ul1{  width:133px;  height:200px;  position: absolute;  left:50%;  margin-left: -67px;  top:160px; transform-style:preserve-3d; transform:perspective(800px) rotateX(-10deg); }
+    #ul1 li{  color: #fff;  position: absolute;  left: 0;  top:0;  width:100%;  height:100%;
+         background: url(img1/0.jpg) no-repeat;  border-radius: 5px; box-shadow: 0 0 20px #fff;
+        -webkit-box-reflect: below 10px -webkit-linear-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,0.4));}
+
+    /*3d爆炸*/
+    .blast{ height: 600px; overflow: hidden; background: #f9f9f9;}
+    .m-blast{  width:700px;  height:400px;  background: url(images/1.jpg) no-repeat;  margin: 0 auto;  position: relative; }
+    .m-blast span{ position: absolute;  background: url(images/0.jpg) no-repeat;}
+
+    /*canvas屏保*/
+    .screensaver{ height: 600px; background: #000;}
+    canvas{ background: #000;}
+
+    /*拖拽碰撞摩擦*/
+    .friction{ height: 600px; background: #f1f1f1; position: relative;}
+    .friction div{  width:100px;  height:100px;  background: red;  position: absolute;  left:100px; 
+         top:100px; -border-radius: 50%; }
+</style>
+<script>
+    window.onload=function(){
+        //3d翻页
+        (function(){
+            var oBox=document.querySelector('.box');
+            var oPage=document.querySelector('.page');
+            var oFront=document.querySelector('.front');
+            var oBack=document.querySelector('.back');
+            var oPage2=document.querySelector('.page2');
+
+            var iNow=0;
+            var bReady=true;
+            oBox.onclick=function(){
+                if(bReady==false)return;
+                bReady=false;
+                iNow++;
+                oPage.style.transition='1s all ease';
+                oPage.style.transform='perspective(800px) rotateY(-180deg)';
+
+                oPage.addEventListener('transitionend',function(){
+                    bReady=true;
+                    oPage.style.transition='none';
+                    oPage.style.transform='perspective(800px) rotateY(0deg)';
+                    //换图
+                    oBox.style.backgroundImage='url(images/'+iNow%3+'.jpg)';
+                    oFront.style.backgroundImage='url(images/'+iNow%3+'.jpg)';
+
+                    oBack.style.backgroundImage='url(images/'+(iNow+1)%3+'.jpg)';
+                    oPage2.style.backgroundImage='url(images/'+(iNow+1)%3+'.jpg)';
+
+                },false);
+            };
+        })();
+        
+        //颗粒
+        (function(){
+            var oBox=document.querySelector('#m-3dpe');
+
+            var R=4;
+            var C=7;
+            for(var r=0; r<R; r++){
+                for(var c=0; c<C; c++){
+                    var oSpan=document.createElement('span');
+                    oSpan.style.width=oBox.offsetWidth/C+'px';
+                    oSpan.style.height=oBox.offsetHeight/R+'px';
+                    oBox.appendChild(oSpan);
+
+                    oSpan.style.left=oSpan.offsetWidth*c+'px';
+                    oSpan.style.top=oSpan.offsetHeight*r+'px';
+
+                    //span里面需要有两个面
+                    oSpan.innerHTML='<em class="front"></em><em class="back"></em>';
+                    oSpan.children[0].style.backgroundPosition='-'+oSpan.offsetWidth*c+'px -'+oSpan.offsetHeight*r+'px';
+                    oSpan.children[1].style.backgroundPosition='-'+oSpan.offsetWidth*c+'px -'+oSpan.offsetHeight*r+'px';
+
+                    oSpan.dataset.r=r;
+                    oSpan.dataset.c=c;
+                }
+            }
+
+            //点击翻转
+            var aSpan=oBox.children;
+            var iNow=0;
+            oBox.onclick=function(){
+                iNow++;
+                for(var i=0; i<aSpan.length; i++){
+                    var t=parseInt(aSpan[i].dataset.r)+parseInt(aSpan[i].dataset.c);
+                    aSpan[i].style.transition='.4s all ease '+t*200+'ms';
+                    aSpan[i].style.transform='perspective(800px) rotateY(180deg)';
+                }
+
+                aSpan[aSpan.length-1].addEventListener('transitionend',function(){
+                    for(var i=0; i<aSpan.length; i++){
+                        aSpan[i].style.transition='none';
+                        aSpan[i].style.transform='perspective(800px) rotateY(0deg)';
+
+                        //换图
+                        aSpan[i].children[0].style.backgroundImage='url(images/'+iNow%3+'.jpg)';
+                        aSpan[i].children[1].style.backgroundImage='url(images/'+(iNow+1)%3+'.jpg)';
+                    }
+                },false);
+            };
+        })();
+
+        //图片环
+        (function(){
+            var oUl=document.getElementById('ul1');
+            var N=11;
+            for(var i=0; i<N; i++){
+                var oLi=document.createElement('li');
+                oLi.style.backgroundImage='url(img1/'+(i)+'.jpg)';
+                oUl.appendChild(oLi);
+
+                oLi.style.transition='1s all ease '+(N-i)*200+'ms';
+
+                (function(oLi,i){
+                    setTimeout(function(){
+                        oLi.style.transform='rotateY('+360/N*i+'deg) translateZ(340px)';
+                    },0)
+                })(oLi,i);
+            }
+
+            var aLi=oUl.children;
+
+            function close(){
+                for(var i=0; i<aLi.length; i++){
+                    aLi[i].style.transition='none';
+                }
+            }
+
+            aLi[0].addEventListener('transitionend',function(){
+                rotateChange();
+            },false);
+
+            var x=0;
+            var y=0; //拖拽刚好跟旋转相反
+            var iSpeedX=0;
+            var lastX=0;
+            var timer=null;
+
+            document.onmousedown=function(ev){
+                var oEvent=ev || event;
+                var disX=oEvent.clientX-y;
+                var disY=oEvent.clientY-x;
+                clearInterval(timer);
+
+                document.onmousemove=function(ev){
+                    var oEvent=ev || event;
+                    y=oEvent.clientX-disX;
+                    x=oEvent.clientY-disY;
+                    close();
+                    rotateChange();
+                    iSpeedX=oEvent.clientX-lastX;
+                    lastX=oEvent.clientX;
+                };
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+
+                    //alert(iSpeedX);
+                    timer=setInterval(function(){
+                        iSpeedX*=0.5;
+
+                        y+=iSpeedX;
+
+                        rotateChange();
+                    },30);
+                };
+                return false;
+            };
+            function rotateChange(){
+                for(var i=0; i<aLi.length; i++){
+                    aLi[i].style.transform='rotateY('+(360/N*i+y)+'deg) translateZ(340px)';
+                    var d=Math.abs(Math.abs((360/N*i+y)%360)-180);
+
+                    var scale=d/180;
+
+                    scale<0.2 && (scale=0.2);
+
+                    aLi[i].style.opacity=scale;
+                }
+            }
+        })();
+
+        //爆炸
+        (function(){
+            var oBox=document.querySelector('.m-blast');
+
+            var R=4;
+            var C=7;
+            for(var r=0; r<R; r++){
+                for(var c=0; c<C; c++){
+                    var oSpan=document.createElement('span');
+                    oSpan.style.width=oBox.offsetWidth/C+'px';
+                    oSpan.style.height=oBox.offsetHeight/R+'px';
+                    oBox.appendChild(oSpan);
+
+                    oSpan.style.left=oSpan.offsetWidth*c+'px';
+                    oSpan.style.top=oSpan.offsetHeight*r+'px';
+                    oSpan.style.backgroundPosition='-'+oSpan.offsetWidth*c+'px -'+oSpan.offsetHeight*r+'px';
+                }
+            }
+
+            //点击
+            var aSpan=oBox.children;
+            var iNow=0;
+            oBox.onclick=function(){
+                iNow++;
+                //准备爆炸
+                for(var i=0; i<aSpan.length; i++){
+                    aSpan[i].style.transition='1s all cubic-bezier(0.44,-0.38, 0.4, 1.32)';
+                    var x=aSpan[i].offsetWidth/2+aSpan[i].offsetLeft-oBox.offsetWidth/2;
+                    var y=aSpan[i].offsetHeight/2+aSpan[i].offsetTop-oBox.offsetHeight/2;
+                    aSpan[i].style.transform='perspective(800px) translate('+x+'px,'+y+'px) scale(1.5) rotateX('+rnd(-180,180)+'deg) rotateY('+rnd(-180,180)+'deg)';
+                    aSpan[i].style.opacity=0;
+                }
+
+                //运动结束
+                aSpan[0].addEventListener('transitionend',function(){
+                    for(var i=0; i<aSpan.length; i++){
+                        aSpan[i].style.transition='none';
+                        aSpan[i].style.transform='perspective(800px) translate(0px,0px) scale(1) rotateX(0deg) rotateY(0deg)';
+                        aSpan[i].style.opacity=1;
+
+                        //换图
+                        oBox.style.backgroundImage='url(images/'+(iNow+1)%3+'.jpg)';
+                        aSpan[i].style.backgroundImage='url(images/'+iNow%3+'.jpg)';
+                    }
+                },false);
+            };
+
+                    
+        })();
+        
+        function rnd(n,m){
+            return parseInt(Math.random()*(m-n))+n;
+        }
+
+        // canvas屏保
+        (function(){
+            var oC=document.getElementById('c1');
+            var gd=oC.getContext('2d'); //画笔
+            var winW=document.documentElement.clientWidth;
+            var winH=document.documentElement.clientHeight;
+
+            oC.width=winW;
+            oC.height=winH;
+
+            var N=5; //点的数量
+
+            var LEN=7;
+            var aPoint=[]; //[{x,y,speedX,speedY}]
+            var oldArr=[]; //尾巴
+
+            for(var i=0; i<N; i++){
+                aPoint[i]={
+                    x:rnd(0,winW),
+                    y:rnd(0,winH),
+                    iSpeedX:rnd(-8,8),
+                    iSpeedY:rnd(-8,8)
+                };
+            }
+
+            setInterval(function(){
+                gd.clearRect(0,0,oC.width,oC.height);
+                
+                for(var i=0; i<aPoint.length; i++){
+                    aPoint[i].x+=aPoint[i].iSpeedX;
+                    aPoint[i].y+=aPoint[i].iSpeedY;
+
+                    if(aPoint[i].x>=winW){
+                        aPoint[i].x=winW;
+                        aPoint[i].iSpeedX*=-1;
+                    }
+                    if(aPoint[i].x<=0){
+                        aPoint[i].x=0;
+                        aPoint[i].iSpeedX*=-1;
+                    }
+                    if(aPoint[i].y<=0){
+                        aPoint[i].y=0;
+                        aPoint[i].iSpeedY*=-1;
+                    }
+                    if(aPoint[i].y>=winH){
+                        aPoint[i].y=winH;
+                        aPoint[i].iSpeedY*=-1;
+                    }
+
+                    drawPoint(aPoint[i]);
+                }
+
+                //连线
+                gd.beginPath();
+                gd.strokeStyle='#fff';
+                gd.moveTo(aPoint[0].x,aPoint[0].y);
+                for(var i=1; i<aPoint.length; i++){
+                    gd.lineTo(aPoint[i].x, aPoint[i].y);
+                }
+                gd.closePath();
+                gd.stroke();
+
+                //画尾巴
+                var arr=[];
+                for(var i=0; i<aPoint.length; i++){
+                    arr[i]={
+                        x:aPoint[i].x,
+                        y:aPoint[i].y
+                    };
+                }
+
+                oldArr.push(arr);
+
+                if(oldArr.length>LEN){
+                    oldArr.shift();
+                }
+
+                for(var i=0; i<oldArr.length; i++){
+                    gd.beginPath();
+                    var opacity=i/oldArr.length;
+                    gd.strokeStyle='rgba(255,255,255,'+opacity+')';
+                    gd.moveTo(oldArr[i][0].x,oldArr[i][0].y);
+
+                    for(var j=1; j<oldArr[i].length; j++){
+                        gd.lineTo(oldArr[i][j].x, oldArr[i][j].y);
+                    }
+                    gd.closePath();
+                    gd.stroke();
+                }
+            },16);
+
+            //drawPoint
+            function drawPoint(p){
+                var pW=1;
+                var pH=1;
+                gd.fillStyle='#fff';
+                gd.fillRect(p.x-pW/2, p.y-pH/2,pW,pH);
+            }
+        })();
+
+        //拖拽碰撞摩擦
+        (function(){
+           var oDiv=document.getElementById('m-friction');
+           var oFric=document.getElementById('m-fric');
+            var iSpeedX=0;
+            var iSpeedY=0;
+            var lastX=0;
+            var lastY=0;
+            var timer=null;
+
+            oDiv.onmousedown=function(ev){
+                var oEvent=ev || event;
+                var disX=oEvent.clientX-oDiv.offsetLeft;
+                var disY=oEvent.clientY-oDiv.offsetTop;
+
+                clearInterval(timer);
+
+                oFric.onmousemove=function(ev){
+                    var oEvent=ev || event;
+                    oDiv.style.left=oEvent.clientX-disX+'px';
+                    oDiv.style.top=oEvent.clientY-disY+'px';
+
+                    iSpeedX=oEvent.clientX-lastX;
+                    iSpeedY=oEvent.clientY-lastY;
+
+                    lastX=oEvent.clientX;
+                    lastY=oEvent.clientY;
+                };
+
+                oFric.onmouseup=function(){
+                    oFric.onmousemove=null;
+                    oFric.onmouseup=null;
+
+                    doMove2();
+                };
+                return false;
+            };
+
+            function doMove2(){
+                timer=setInterval(function(){
+                    iSpeedY+=3;
+
+                    var l=oDiv.offsetLeft+iSpeedX;
+                    var t=oDiv.offsetTop+iSpeedY;
+                    if(t>=document.documentElement.clientHeight-oDiv.offsetHeight){
+                        t=document.documentElement.clientHeight-oDiv.offsetHeight;
+                        iSpeedY*=-0.8;
+                        iSpeedX*=0.8;
+                    }
+                    if(t<=0){
+                        t=0;
+                        iSpeedY*=-0.8;
+                        iSpeedX*=0.8;
+                    }
+                    if(l>=document.documentElement.clientWidth-oDiv.offsetWidth){
+                        l=document.documentElement.clientWidth-oDiv.offsetWidth;
+                        iSpeedX*=-0.8;
+                        iSpeedY*=0.8;
+                    }
+                    if(l<=0){
+                        l=0;
+                        iSpeedX*=-0.8;
+                        iSpeedY*=0.8;
+                    }
+                    oDiv.style.left=l+'px';
+                    oDiv.style.top=t+'px';
+
+                    if(Math.abs(iSpeedX)<1)iSpeedX=0;
+                    if(Math.abs(iSpeedY)<1)iSpeedY=0;
+
+                    if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight){
+                        clearInterval(timer);
+                    }
+                },30);
+            }
+        })();
+
+};
+</script>
+
+</head>
+<body>
+    <!--head-->
+    <header id="header">
+        <div class="m-c-header" id="head">
+        <div class="header clearFix">
+            <h1>张小明</h1>
+            <nav>
+                <a href="index.html">首页</a>
+                <a href="javascript.html">案例展示</a>
+                <a href="h5css3.html">HTML5</a>
+                <a href="javascript2.html">案例2</a>
+                <a href="jsonp.html">JSONP</a>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <!--head end-->
+
+    <!--3d矩形-->
+    <section class="rec">
+        <a class="return" href="index.html#footer">矩形</a>
+        
+        <div class="rec3d" id="rec3d">
+            <div class="z-t"></div>
+            <div class="z-b"></div>
+            <div class="x-l"></div>
+            <div class="x-r"></div>
+            <div class="y-l"></div>
+            <div class="y-r"></div>  
+        </div>
+    </section>
+
+    <!--3d翻页-->
+    <section>
+        <div class="m-3dpage">
+            <a class="return" href="index.html#neList" id="m-hook">3d翻页</a>
+            <p>点击图片试试</p>
+            <div class="box">
+                <div class="page">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+                <div class="page2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--3d颗粒翻转-->
+    <section>
+        <div class="m-3dparticle">
+            <a class="return" href="index.html#neList" id="m-3dparticle">3d颗粒翻页</a>
+            <p>点击图片试试</p>
+            <div class="box" id="m-3dpe"></div>
+        </div>
+    </section>
+
+    <!--3d图片环-->
+    <section>
+        <div class="m-ring">
+            <a class="return" href="index.html#neList" id="m-ring">3d图片环</a>
+            <p>拖拽图片试试</p>
+            <ul id="ul1"></ul>
+        </div>
+    </section>
+
+    <!--3d爆炸-->
+    <section>
+        <div class="blast">
+            <a class="return" href="index.html#footer" id="m-blast">3d爆炸</a>
+            <p>点击图片试试</p>
+            <div class="m-blast"></div>
+        </div>
+    </section>
+
+    <!--canvas屏保-->
+    <section>
+        <div class="screensaver">
+            <a class="return" href="index.html#footer" id="screensaver">canvas屏保</a>
+            <canvas id="c1" width="800" height="600">
+            </canvas>
+        </div>
+    </section>
+
+    <!--拖拽碰撞摩擦-->
+    <section>
+        <div class="friction" id="m-fric">
+            <a class="return" href="index.html#footer" id="friction">拖拽碰撞摩擦</a>
+            <p>拖拽扔出图片试试</p>
+            <div id="m-friction"></div>
+        </div>
+    </section>
+</body>
+</html>

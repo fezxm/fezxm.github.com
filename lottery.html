@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+.bigbox{ overflow:hidden;}
+.red_box{ width:630px; float:left;}
+.red_box li{ width:50px; height:50px; background:regba(255,0,0,0); font-size:20px; font-weight:bold; text-align:center; line-height:50px; border:1px solid #000; float:left; border-radius:50%; margin:10px;}
+.redBtn{ width:100px; height:50px; border:1px solid #C33; font-size:20px; font-weight:bold; text-align:center; line-height:50px; position:absolute; left:450px; top:322px; cursor:pointer; border-radius:20%; color:#F30;}
+.blue_box{width:630px; float:left;}
+.blue_box li{width:50px; height:50px; background:regba(255,0,0,0); font-size:20px; font-weight:bold; text-align:center; line-height:50px; border:1px solid #000; float:left; border-radius:50%; margin:10px;}
+.blueBtn{ width:100px; height:50px; border:1px solid #69C; font-size:20px; font-weight:bold; text-align:center; line-height:50px; position:absolute; right:86px; top:322px; cursor:pointer; border-radius:20%; color:#69C;}
+.text_box{ width:300px; height:150px; border:1px solid #000; cursor:pointer; position:absolute; left:40%;bottom:80px; text-align:center;}
+.red_text{ color:#F00; font-size:20px; font-weight:bold;}
+.blue_text{ color:#33F;font-weight:bold; padding-left:50px;font-size:20px; font-weight:bold;}
+</style>
+<script src="move.index.js"></script>
+<script>
+window.onload=function(){
+	var oRedBox=document.getElementById('red_box')
+	var aLi=oRedBox.children;
+	var oRedBtn=document.getElementById('redBtn');
+	var redText=document.getElementById('red_text');
+	for(var i=0;i<aLi.length;i++)
+	{
+		aLi[i].innerHTML=i+1;
+	}
+	
+	oRedBtn.onclick=function(){
+		
+		for(var i=0;i<aLi.length;i++)
+		{
+			aLi[i].style.background='';
+		}
+		
+		var arr=[];
+		while(arr.length<6)
+		{
+			var n=rnd(0,33);
+			if(! findArr(arr,n))
+			{
+				arr.push(n);
+				arr.sort(function(n,m){
+					return n-m			
+				})
+			}
+			var aText=[]
+			for(var i=0;i<arr.length;i++)
+			{
+				aText.push(arr[i]+1)
+			}
+			redText.innerHTML=aText;
+		}
+		
+		for(var i=0;i<arr.length;i++)
+		{	
+			
+			aLi[arr[i]].style.background='red';
+		}
+	};
+	
+	
+	
+	var oBlueBox=document.getElementById('blue_box')
+	var aLi2=oBlueBox.children;
+	var oBlueBtn=document.getElementById('blueBtn');
+	var blueText=document.getElementById('blue_text');
+	
+	for(var i=0;i<aLi2.length;i++)
+	{
+		aLi2[i].innerHTML=i+1;
+	}
+	
+	oBlueBtn.onclick=function(){
+		for(var i=0;i<aLi2.length;i++)
+		{
+			aLi2[i].style.background='';
+		}
+		
+		var arr=[];
+		
+		var n=rnd(0,16);
+		
+		arr.push(n);
+					
+		var aText=[]
+		for(var i=0;i<arr.length;i++)
+		{
+			aText.push(arr[i]+1)
+		}
+		blueText.innerHTML=aText;
+		
+		for(var i=0;i<arr.length;i++)
+		{	
+			
+			aLi2[arr[i]].style.background='blue';
+		}
+	};
+	
+	
+	
+	
+	//两个函数
+	function findArr(arr,n)
+	{
+		for(var i=0;i<arr.length;i++)
+		{
+			if(arr[i] == n)return true;
+				
+		}
+		return false;
+	}
+	
+	
+	
+	function rnd(n,m)
+	{
+		return Math.floor(Math.random()*(m-n)+n)
+	}
+};
+
+</script>
+</head>
+
+<body>
+<div class="bigbox">
+	<ul id="red_box" class="red_box">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+		<li>12</li>
+		<li>13</li>
+		<li>14</li>
+		<li>15</li>
+		<li>16</li>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+		<li>12</li>
+		<li>13</li>
+		<li>14</li>
+		<li>15</li>
+		<li>16</li>
+		<li>16</li>
+	</ul>	
+	<div id="redBtn" class="redBtn">红球选择</div>
+	<ul class="blue_box" id="blue_box">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div id="blueBtn" class="blueBtn">红球选择</div>
+</div>
+<div type="text" id="text" class="text_box">
+	<span id="red_text" class="red_text"></span>
+	<span id="blue_text" class="blue_text"></span>
+</div>
+</body>
+</html>

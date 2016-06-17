@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-04-18 19:52:42
+ * @version $Id$
+ */
+*{ padding:0; margin: 0;}
+
+body,h1,h2,h3,h4,h5,h6,div,p,ul,ol,dl,dd,dt,li,span,strong,i,b,em,a,input{ font-size: 12px; 
+        font-weight:normal; line-height: 100%;}      
+a{ text-decoration:none;    color: #000;}
+a img{ border: none; vertical-align: top;}
+i,em{ font-style: normal;}
+b,strong{ font-weight: normal;}
+ul,ol,li,dl{ list-style:none;}
+input,textarea{ outline:none; border: none; resize:none;}
+.clearFix:after{display: block; content: ''; clear: both;}
+.clearFix{zoom:1;}
+.clearfix:after{display: block; content: ''; clear: both;}
+.clearfix{zoom:1;}
+/* 基础css  清除默认样式*/
+
+li{ list-style:none; vertical-align:top;}/*li里浮动,li不浮动，去3像素bug*/
+a img{ border:none; }/*a包img：去蓝色边框*/
+img{vertical-align:top;} /*去除图片与下边框的间隙*/
+th,td{ border:1px solid red; padding:0;}
+table{border-collapse:collapse;}
+
+
+
+

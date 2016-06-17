@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .header_img{ height:122px; background:url(img/top_img.png) no-repeat; line-height:122px;}
+  .header_box{ width:1000px; height:122px; margin:0 auto;  overflow:hidden; line-height:122px;}
+  .header_box h1{ width:184px; height:44px; background:url(img/logo.png) no-repeat; text-indent:-999em; margin-top:40px; float:left;}
+  .logo_a{ display:block; width:100%; height:100%;}
+  .top_ul{ float:left;}
+  .top_li{ float:left; padding:0 8px; }
+  .top_ul a{ color:#fff;}
+  .top_i1{background:url(img/xuebitu.png) no-repeat; width:23px; height:19px; float:left;margin-top:52px; margin-left:17px;}
+  .top_i1:hover,.top_i2:hover{ transform:rotate(360deg); transition:all 0.5s linear;}
+  .top_i2{ background:url(img/xuebitu.png) no-repeat -33px 0px;width:23px; height:19px; float:left; margin-left:17px; margin-top:52px; margin-right:14px;}
+  .top_i1 a,.top_i2 a{ display:block; width:100%; height:100%;}
+  .top_car{ background:url(img/car.png) no-repeat; width:177px; height:35px; float:right; margin-top:44px;}
+  .top_text{ float:right;}
+  .top_li span{ color:#fff; margin-left:21px;}
+  /*nav*/
+  .nav_bigbox{ height:41px; background:url(img/nav_img.png) no-repeat;}
+  .nav_box{ width:1000px; margin:0 auto;}
+  .nav_oneli{ width:200px; height:41px; background:#343534; line-height:41px; float:left;}
+  .nav_oneli a{ color:#fff; margin-left:15px;}
+  .nav_oneli a{ display:block; width:100px; height:100px;}
+  .nav_twoli{ width:83px; height:41px; float:left; line-height:41px; text-align:center; position:relative;}
+  .nav_twoli:hover{ background:#4b4b4b;}
+  .nav_twoli a{ color:#fff; font-size:14px; display:block; width:100%; height:100%;}
+  .show_box{ width:83px; height:238px; background:#fff; position:absolute; left:0;bottom:-238px; display:none;}
+  .show_box_li{ height:41px; border-bottom:1px dashed #b0b1b2; line-height:41px; color:#4b4b4b;}
+  /*menu*/
+  .menu_box{ height:512px; background:url(img/che.png) no-repeat center;}
+  .menu_ul{ width:200px; height:512px; background:url(img/side_bar.png) no-repeat; padding:0 12px;}
+  .menu_bigbox{ width:1000px; margin:0 auto;}
+  .menu_li{ width:178px; border-bottom:2px solid #d9d8d8; margin-right:-24px; overflow:hidden; padding-bottom:10px;}
+  .menu_li3{width:178px; border-bottom:2px solid #d9d8d8; margin-right:-24px; overflow:hidden; padding-bottom:10px; margin-top:38px;}
+  .menu_li3 a{ margin-right:17px; font-size:12px; color:#666; line-height:23px;}
+  .menu_li a{ margin-right:17px; font-size:12px; color:#666; line-height:23px;} 
+  .menu_h3{ line-height:40px; font-size:14px; font-weight:bold;}
+  .side_ba{ font-weight:bold; display:block; margin-top:15px;}
+</style> 
+
+<script>
+   window.onload=function(){
+	  var father=document.getElementById('father') 
+	  var bton1=father.getElementsByTagName('i')
+	  var bfather=document.getElementById('boxfather')
+	  var box=bfather.getElementsByTagName('div')
+	     for( var i=0;i<bton1.length;i++){
+		     bton1[i].index=i
+			 bton1[i].onmouseover=function(){
+			   for( var i=0;i<bton1.length;i++){
+			 bton1[i].style.opacity='0'
+			   box[i].style.display='none' 
+			   }
+			   this.style.opacity='1'	 
+			   box[this.index].style.display='block'
+				 
+				 }
+			 
+			 } 
+		var bton2=document.getElementsByClassName('nav_twoli')	
+		var fatherer=document.getElementById('father2')
+		var showbox=fatherer.getElementsByClassName('show_box') 
+		   for( var i=0;i<bton2.length;i++){
+			   bton2[i].index=i
+			   bton2.onmouseover=function(){
+				  showbox[this.index].style.display='block' ;
+				   
+				   }
+			   
+			   }
+	   
+	   
+	   }
+
+</script> 
+
+</head>
+
+<body>
+  <div class="header_img">
+    <div class="header_box clearfix">
+      <h1><a class="logo_a" href="#">汽车logo</a></h1>
+      <div class="top_text">
+      <ul class="top_ul clearfix">
+         <li class="top_li"><a href="#">登录</a><span>|</span></li>
+         <li class="top_li"><a href="#">注册</a></li>
+         <li class="top_li"><a href="#">[会员中心]</a></li>
+         <li class="top_i1"><a href="#"></a></li>
+         <li class="top_i2"><a href="#"></a></li>
+      </ul>
+      <a class="top_car" href="#"></a>
+      </div>
+    
+    </div>
+ </div>
+ <!--nav-->
+  <div class="nav_bigbox">
+   <div class="nav_box">
+     <ul class="nav_ul clearfix" id="father2">
+       <li class="nav_oneli"><a href="#">产品分类</a></li>
+       <li class="nav_twoli"><a href="#">首页</a>
+         <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul>
+       
+       </li>
+       <li class="nav_twoli"><a href="#">精品商城</a>
+             <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul>
+       </li>
+       <li class="nav_twoli"><a href="#">积分商城 </a>
+             <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+       <li class="nav_twoli"><a href="#">服务套餐</a>
+             <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+       </li>
+       <li class="nav_twoli"><a href="#">保险服务</a>
+             <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+   
+       </li>
+       <li class="nav_twoli"><a href="#">二手车</a>
+            <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+       </li>
+       <li class="nav_twoli"><a href="#">预约服务</a>
+           <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+      </li>
+       <li class="nav_twoli"><a href="#">特色改装 </a>
+           <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+     </li>
+       <li class="nav_twoli"><a href="#"> 车友会 </a>
+          <ul class="show_box">
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">奢侈精品</li>
+               <li class="show_box_li">精品内饰</li>
+               <li class="show_box_li">精品内饰</li>
+             </ul></li>
+       
+       
+       </li>
+     </ul>
+   </div>
+ </div>  
+ <!--menu-->
+  <div class="menu_box"> 
+         <div class="menu_bigbox"> 
+              <ul class="menu_ul">
+                  <h3 class="menu_h3">生活精品</h3>
+                  <li class="menu_li">
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                  </li> 
+                  <h3 class="menu_h3">车内精品</h3>
+                  <li class="menu_li">
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    
+                  </li> 
+                  
+                  <h3 class="menu_h3">改装配件</h3>
+                  <li class="menu_li">
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                  </li>  
+                  
+                  
+                  <li class="menu_li3">
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                    <a href="#">大众</a>
+                  </li>  
+                  
+                  <a class="side_ba" href="#">更多&gt;&gt;</a>
+               </ul>   
+          </div>        
+                  
+     </div>           
+ <!--新品牌区-->
+  <div class="new_car" id="boxfather" >
+     <h3>新车品牌专区</h3>
+     <ul class="new_tul clearfix" id="father">
+       <li class="new_tli"><a href="#"><i class="bton"></i></a></li>
+       <li class="new_tli2"><a href="#"><i></i></a></li>
+       <li class="new_tli3"><a href="#"><i></i></a></li>
+       <li class="new_tli4"><a href="#"><i></i></a></li>
+       <li class="new_tli5"><a href="#"><i></i></a></li>
+       <li class="new_tli6"><a href="#"><i></i></a></li>
+       <li class="new_tli7"><a href="#"><i></i></a></li>
+     </ul>
+     
+    <div class="boxshow">
+     <ul class="new_details_ul">
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+     </div>
+     
+     <div>
+     <ul class="new_details_ul">
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+      
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+        <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+     </div>
+     
+     <div>
+     <ul class="new_details_ul">
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+     </div>
+     
+     <div>
+     <ul class="new_details_ul">
+        <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+     </div>
+     
+     <div>
+     <ul class="new_details_ul">
+        <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+     </div>
+     
+      <div>
+     <ul class="new_details_ul">
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+      
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+        <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+     </div>
+     
+     <div>
+     <ul class="new_details_ul">
+        <li class="new_details">
+          <a href="#"><img src="img/car2.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car1.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car3.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+       
+       <li class="new_details">
+          <a href="#"><img src="img/car4.png" /></a>
+          <h4>极致优雅 新CC演绎摩登生活秀</h4>
+          <p class="newcar_p1">原价 :<span>199万元</span></p>
+          <p class="newcar_p1">现价 :<i>99万元</i></p>
+       </li>
+     </ul>
+    </div>
+     
+     
+  </div> 
+ <!--新品商城-->
+  <div class="fine_mallbox">
+   <h3 class="fine_mall_h3">精品商城</h3>
+   <ul class="fine_ul">
+      <li class="fine_li">
+        <a href="#"><img src="img/jingpinche.png" /></a>
+        <h4>SLK 200 豪华运动型</h4>
+        <p>平均油耗率(L/100km)</p>
+        <p>加速时间0-100km/h(S)：7</p>
+        <p>最高车速(km/h)：237</p>
+        <p>轴距(mm)：2430</p>
+        <p class="p2">价格：200-300万<a href="#"><i></i></a></p>
+      
+      </li>
+      
+       <li class="fine_li">
+        <a href="#"><img src="img/jingpinche.png" /></a>
+        <h4>SLK 200 豪华运动型</h4>
+        <p>平均油耗率(L/100km)</p>
+        <p>加速时间0-100km/h(S)：7</p>
+        <p>最高车速(km/h)：237</p>
+        <p>轴距(mm)：2430</p>
+        <p class="p2">价格：200-300万<a href="#"><i></i></a></p>
+      
+      </li>
+      
+       <li class="fine_li">
+        <a href="#"><img src="img/jingpinche.png" /></a>
+        <h4>SLK 200 豪华运动型</h4>
+        <p>平均油耗率(L/100km)</p>
+        <p>加速时间0-100km/h(S)：7</p>
+        <p>最高车速(km/h)：237</p>
+        <p>轴距(mm)：2430</p>
+        <p class="p2">价格：200-300万<a href="#"><i></i></a></p>
+      
+      </li>
+      
+      <li class="fine_li">
+        <a href="#"><img src="img/jingpinche.png" /></a>
+        <h4>SLK 200 豪华运动型</h4>
+        <p>平均油耗率(L/100km)</p>
+        <p>加速时间0-100km/h(S)：7</p>
+        <p>最高车速(km/h)：237</p>
+        <p>轴距(mm)：2430</p>
+        <p class="p2">价格：200-300万<a href="#"><i></i></a></p>
+      
+      </li>
+      
+     </ul> 
+   
+   </div>   
+ <!--广告-->
+ <div class="ad_box">
+   <a href="#"><img src="img/benchiguanggao.png" /></a>
+ 
+ </div>
+ <!--精品推荐-->
+ <div class="Recommend_box clearfix">
+    <h3 class="fine_mall_h3">精品推荐</h3>
+    <a class="re_big_img" href="#"><img src="img/精品推荐img.png" /></a>
+    
+    
+    <ul class="re_ul showbox clearfix">
+          <li class="re_li1"><a href="#"></a></li>
+          <li class="re_li2"><a href="#"></a></li>
+          <li class="re_li3"><a href="#"></a></li>
+          <li class="re_li4"><a href="#"></a></li>
+        
+        </ul>
+        
+         <ul class="re_ul clearfix">
+          <li class="re_li1"><a href="#"></a></li>
+          <li class="re_li2"><a href="#"></a></li>
+          <li class="re_li3"><a href="#"></a></li>
+          <li class="re_li4"><a href="#"></a></li>
+        
+        </ul>
+        
+         <ul class="re_ul clearfix">
+          <li class="re_li1"><a href="#"></a></li>
+          <li class="re_li2"><a href="#"></a></li>
+          <li class="re_li3"><a href="#"></a></li>
+          <li class="re_li4"><a href="#"></a></li>
+        
+        </ul>
+
+     
+        <ul class="re_c_ul clearfix">
+          <li class="re_c_li"><a href="#"><img src="img/suv.png" /></a></li>
+          <li class="re_c_li"><a href="#"><img src="img/suv.png" /></a></li>
+          <li class="re_c_li"><a href="#"><img src="img/suv.png" /></a></li>
+          <li class="re_c_li"><a href="#"><img src="img/suv.png" /></a></li>
+        
+        </ul>
+        
+        
+        <ul class="re_r_ul">
+           <li class="re_r_lione">
+             <h3>新闻动态<a href="#">更多&gt;</a></h3>
+           </li>
+           
+           <li class="re_r_li">
+             <a href="#">一汽奥迪薄石亲临百得利海淀......</a>
+           </li>
+           
+           <li class="re_r_li">
+             <a href="#">一汽奥迪薄石亲得利海淀......</a>
+           </li>
+           
+           <li class="re_r_li">
+             <a href="#">一汽奥迪薄石亲临百得利海淀......</a>
+           </li>
+           
+           <li class="re_r_li">
+             <a href="#">一汽奥迪临百得利海淀......</a>
+           </li>
+           
+           <li class="re_r_li">
+             <a href="#">一汽奥迪薄石亲临利海淀......</a>
+           </li>
+           
+           <li class="re_r_li">
+             <a href="#">一汽奥迪薄石亲临百得利海淀......</a>
+           </li>
+           
+           <a class="re_r_img" href="#"><img src="img/cr_r_img.png" /></a>
+         
+        </ul>
+     
+     </div>
+ <!--积分商城-->
+ <div class="Integral_box  clearfix">
+   <h3 class="fine_mall_h3">积分商城</h3>
+   <ul class="in_ul clearfix">
+     <li class="in_li">
+       <a href="javascript"><img src="img/jifensahngcheng_img_1.png" /></a>
+       <h4>大众新款速腾</h4>
+       <p class="in_li_p">兑换积分:<span>1980分</span></p>
+       <a class="in_li_a" href="#"></a>
+     </li>
+     
+      
+     <li class="in_li">
+       <a href="javascript"><img src="img/jifensahngcheng_img_1.png" /></a>
+       <h4>大众新款速腾</h4>
+       <p class="in_li_p">兑换积分:<span>1980分</span></p>
+       <a class="in_li_a" href="#"></a>
+     </li>
+     
+     <li class="in_li">
+       <a href="javascript"><img src="img/jifensahngcheng_img_1.png" /></a>
+       <h4>大众新款速腾</h4>
+       <p class="in_li_p">兑换积分:<span>1980分</span></p>
+       <a class="in_li_a" href="#"></a>
+     </li>
+     
+     <li class="in_li">
+       <a href="javascript"><img src="img/jifensahngcheng_img_1.png" /></a>
+       <h4>大众新款速腾</h4>
+       <p class="in_li_p">兑换积分:<span>1980分</span></p>
+       <a class="in_li_a" href="#"></a>
+     </li>  
+   </ul>  
+   
+   <ul class="in_b_imgbox clearfix">
+      <li><a href="#"><img src="img/in_b_img1.png" /></a></li>
+      <li><a href="#"><img src="img/in_b_img2.png" /></a></li>
+      <li><a href="#"><img src="img/in_bimg3.png" /></a></li>
+      <li><a href="#"><img src="img/in_bimg4.png" /></a></li>
+   
+   </ul>  
+     
+</div>  
+ <!--企业信息-->
+ <div class="Enterprise_box clearfix">
+     <h4 class="en_h4">企业信息</h4>
+     
+     <div class="en_l_box">
+        <h5 class="en_l_h5">
+           <a class="a1" href="#">企业信息 >> </a>
+           <a class="a2" href="#">More >></a>
+        </h5> 
+        <a class="en_img_a" href="#"><img src="img/ne_l_img.png" /></a> 
+        
+        <ul class="en_l_ul">
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+        
+        </ul> 
+     </div>
+      
+     
+     <div class="ne_c_box clearfix">
+        <h5 class="ne_c_p">实用工具 >><a href="#">More >></a></h5>
+        <div class="ne_marginbox">
+            <ul class="en_c_ul clearfix">
+              <li class="en_c_li">
+                <a href="#"><img src="img/en_img1.png" /></a>
+                <p><a href="#">车型对比</a></p>
+              </li>
+              
+              <li class="en_c_li">
+                <a href="#"><img src="img/en_img2.png"/></a>
+                <p><a href="#">车型对比</a></p>
+              </li>
+              
+              <li class="en_c_li">
+                <a href="#"><img src="img/en_img4.png"/></a>
+                <p><a href="#">车型对比</a></p>
+              </li>
+              
+              <li class="en_c_li">
+                <a href="#"><img src="img/en_img5.png" /></a>
+                <p><a href="#">车型对比</a></p>
+              </li>
+              
+              <li class="en_c_li">
+                <a href="#"><img src="img/en_img6.png"/></a>
+                <p><a href="#">车型对比</a></p>
+              </li>
+              
+              <li class="en_c_li">
+                <a href="#"><img src="img/ne_img3.png" /></a>
+                <p><a href="#">车型对比</a></p>
+              </li>
+           
+            </ul>
+            
+            <dl class="en_ct_dl">
+              <dt class="en_ct_dt">问答专家团 >></dt>
+                  <dd><a href="#">想做一个底盘装甲请问有必要吗？</a></dd>
+                  <dd><a href="#">想做一个底盘装甲请问有必要吗？</a></dd>
+                   <dd><a href="#">想做一个底盘装甲请问有必要吗？</a></dd>
+                   <dd><a href="#">想做一个底盘装甲请问有必要吗？</a></dd>
+             </dl>    
+         </div>         
+     </div>  
+     
+       <div class="en_r_box">
+          <ul class="en_r_ul clearfix">
+            <li class="en_r_li"><a href="#"><img src="img/ne_r_img.png" /></a></li>
+            <li class="en_r_li"><a href="#"><img src="img/ne_r_img.png" /></a></li>
+            <li class="en_r_li"><a href="#"><img src="img/ne_r_img.png" /></a></li>
+            <li class="en_r_li"><a href="#"><img src="img/ne_r_img.png" /></a></li>
+          </ul>
+          <h5 class="en_r_h5">促销信息 >></h5>
+          
+          <ul class="en_l_ul">
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>
+          <li class="en_l_li"><a href="#">>> 全新保时捷Macan发布会</a></li>              
+        </ul> 
+       
+        </div> 
+        
+        <a class="en_r_img" href="#"><img src="img/nv.png" /></a>
+          
+    </div>   
+ <!--广告-->
+ <div class="ad_box">
+ <a href="#"><img src="img/benchiguanggao.png" /></a>  
+ </div>    
+ <!--服务业-->
+ <div class="serve_box clearfix">
+   <h3 class="serve_box_h3">
+     <p class="serve_h3_p">服务行业</p>
+   </h3>
+   <div class="se_l_box">
+     <h4>服务套餐<a href="#">更多>></a></h4>
+     <a href="#"><img src="img/fuwu_img1.png" /></a>
+     <p class="se_l_p"><a href="#">美容卡</a></p>
+     <p class="se_l_p"><a href="#">美容卡</a></p>
+     <p class="se_l_p"><a href="#">美容卡</a></p>
+     
+   </div>
+   
+   <div class="se_c_box">
+     <h4>服务套餐<a href="#">更多>></a></h4>
+     	 <a href="#"><img src="img/fuwu_img2.png" /></a>
+     <div class="se_ltext">
+         <p class="se_l_p"><a href="#">美容卡</a></p>
+         <p class="se_l_p"><a href="#">美容卡</a></p>
+         <p class="se_l_p"><a href="#">美容卡</a></p>
+     </div>
+     
+     <div class="se_rtext">
+         <p class="se_l_p"><a href="#">美容卡</a></p>
+         <p class="se_l_p"><a href="#">美容卡</a></p>
+         <p class="se_l_p"><a href="#">More >></a></p>
+     </div> 
+   </div>
+   
+   <div class="se_r_box">
+      <h4>预约服务<a href="#">更多>></a></h4>
+      <a href="#"><img src="img/wangfeng.png" /></a>
+      <div class="se_ltext">
+         <p class="se_l_p"><a href="#">预约试驾</a></p>
+         <p class="se_l_p"><a href="#">预约保养</a></p>
+         <p class="se_l_p"><a href="#">预约试驾</a></p>
+         <p class="se_l_p"><a href="#">美预约保养容卡</a></p>
+     </div> 
+     
+     <a class="number" href="#"></a>
+   </div>
+     
+ </div>   
+ <!--百得利中心-->
+ <div class="baideli_box clearfix">
+   <h3 class="serve_box_h3">
+     <p class="serve_h3_p">百得利中心</p>
+   </h3>
+   <ul class="ser_ul">
+      <li class="ser_li">
+         <h3>二手车</h3>
+         <div class="se_imgbox">
+           <a href="#"><img src="img/bailidezhongxin.png" /></a>
+           <div class="se_opa_box"></div>
+           <p>二手车本地过户流程</p>
+         </div>
+      </li> 
+      <li class="se_li2"><i></i><a href="#">二手车迁入与外迁限制条款</a></li> 
+      <li class="se_li2"><i></i><a href="#">个人之间二手车过户手续哪些</a></li> 
+      <li class="se_li2"><i></i><a href="#">二手车不能过户？</a></li>  
+  </ul>
+  
+  <ul class="ser_ul">
+      <li class="ser_li">
+         <h3>二手车</h3>
+         <div class="se_imgbox">
+           <a href="#"><img src="img/bailidezhongxin.png" /></a>
+           <div class="se_opa_box"></div>
+           <p>二手车本地过户流程</p>
+         </div>
+      </li> 
+      <li class="se_li2"><i></i><a href="#">二手车迁入与外迁限制条款</a></li> 
+      <li class="se_li2"><i></i><a href="#">个人之间二手车过户手续哪些</a></li> 
+      <li class="se_li2"><i></i><a href="#">二手车不能过户？</a></li>  
+  </ul>
+  
+  <ul class="ser_ul">
+      <li class="ser_li">
+         <h3>二手车</h3>
+         <div class="se_imgbox">
+           <a href="#"><img src="img/bailidezhongxin.png" /></a>
+           <div class="se_opa_box"></div>
+           <p>二手车本地过户流程</p>
+         </div>
+      </li> 
+      <li class="se_li2"><i></i><a href="#">二手车迁入与外迁限制条款</a></li> 
+      <li class="se_li2"><i></i><a href="#">个人之间二手车过户手续哪些</a></li> 
+      <li class="se_li2"><i></i><a href="#">二手车不能过户？</a></li>  
+  </ul>
+  
+  
+  <h4 class="ser_r_h4">即将上市</h4>
+  <ul class="ser_r_ul">
+    
+    <li class="ser_r_li">
+      <h3>2014年8月7日<i></i><em></em></h3>
+      <p>奥德赛</p>
+    </li>
+    
+    <li class="ser_r_li">
+      <h3>2014年8月08日<i></i><em></em></h3>
+      <p>ATS L</p>
+    </li>
+    
+    <li class="ser_r_li">
+      <h3>2014年8月15日<i></i><em></em></h3>
+      <p>传奇GA3S</p>
+    </li>
+    
+    <li class="ser_r_li">
+      <h3>2014年8月21日<i></i><em></em></h3>
+      <p>红旗H7</p>
+    </li>
+  
+  </ul>
+  
+  
+
+ </div> 
+ <!--footer-->
+ <div class="footer_box">
+     <p class="p1">
+     <a href="#">&nbsp;集团介绍&nbsp; |</a>
+     <a href="#">&nbsp;关于我们&nbsp; |</a>
+     <a href="#">&nbsp;人才招聘&nbsp; |</a>
+     <a href="#">&nbsp;网站地图 &nbsp; |</a>
+     <a href="#">&nbsp;客服中心 &nbsp; |</a>
+     <a href="#">&nbsp;友情链接</a>
+     </p>
+     <p class="p2">京ICP备10020294号-2 版权所有®2011北京百得利汽车进出口集团有限公司</p>
+ </div> 
+   
+  
+
+ 
+        
+      
+      
+     
+     
+ 
+
+  
+   
+ 
+ 
+
+  
+  
+  
+ 
+
+
+  
+    
+    
+    
+   
+  
+  
+  
+         
+      
+       
+  
+ 
+ 
+  
+</body>
+</html>

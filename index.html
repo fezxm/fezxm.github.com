@@ -1,82 +1,252 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<style>
-*{ margin:0; padding:0;}
-div{ width:666px; overflow:hidden; margin:0 auto;}
-ul{ width:200px; float:left; margin:10px; border:1px solid #f00;}
-li{ list-style:none; font-size:50px; background:#fcc; margin:5px; }
-p{ display:none; height:50px; background-color:rgb(128,128,128);}
-a{ display:inline-block; width:30px; height:30px; margin:10px;}
-</style>
-<script>
-window.onload=function(){
-	var aUl=document.getElementsByTagName('ul');
-	var oYm=document.getElementById('ym');
-	var arr=[];
-	
-	
-	var n=0;
-	for(var i=0; i<aUl.length; i++){
-		arr.push(aUl[i]);
-	}	
-	li();
-		
-	window.onscroll=function(){
-		var scroll=document.documentElement.scrollTop || document.body.scrollTop;
-		var client=document.documentElement.clientHeight;
-		var top=scroll+client;
-		
-		var h=document.body.offsetHeight;
-		if(top > h-200){			
-			li();
-		}			
-	};
-	function li(){
-		
-		n++;
-		if(n>5){
-			oYm.style.display='block';
-			return ;
-		}
-		document.title=n;
-		var oA=document.createElement('a');
-		oA.href='javascript:;';
-		oA.innerHTML=n;
-		oYm.appendChild(oA);
-		for(var i=0; i<20; i++){
-			var aLi=document.createElement('li');
-			aLi.innerHTML=i+1;
-			aLi.style.height=rnd(100,300)+'px';
-			arr.sort(function(ul1,ul2){
-				return ul1.offsetHeight-ul2.offsetHeight;
-			});			
-			aLi.style.background='rgb('+rnd(0,255)+','+rnd(0,255)+','+rnd(0,255)+')';
-			arr[0].appendChild(aLi);
-		}
-		
-			//aLi[i].style.background='rgb('+r+', '+g+', '+b+')';
-									
-	}
-	
-	function rnd(n,m){
-		return Math.floor(Math.random()*(m-n)+n);
-	}
-	
-};
-
-</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/common.js"></script>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/effect.js"></script>
 </head>
-
 <body>
-<p></p>
-<div>
-	<ul></ul>
-	<ul></ul>
-	<ul></ul>
-</div>
-<p id="ym"></p>
+    <!--head-->
+    <header id="header">
+        <div class="m-c-header" id="head">
+        <div class="header clearFix">
+            <h1>张小明</h1>
+            <nav>
+                <a href="index.html">首页</a>
+                <a href="javascript.html">案例展示</a>
+                <a href="h5css3.html">HTML5</a>
+                <a href="javascript2.html">案例2</a>
+                <a href="jsonp.html">JSONP</a>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <!--head end-->
+
+    <!--section -->
+    <section>   
+        <!-- Welcome module -->
+        <div id="welcome" class="m-welcome">
+            <div class="welcome on  firstBack">
+                <div class="weMod clearFix ">
+                    <div class="m-left">
+                        <p>Html+Css…</p>
+                        <a href="javascript:;">Go on!</a>
+                    </div>
+
+                    <div class="m-right">
+                        <a href="javascript:;"><img src="images/mz1.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <div class="weMod clearFix ">
+                    <div class="m-left">
+                        <p>JavaScript</p>
+                        <a href="javascript:;">Go on!</a>
+                    </div>
+
+                    <div class="m-right">
+                        <a href="javascript:;"><img src="images/mz2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <div class="weMod clearFix ">
+                    <div class="m-left">
+                        <p>Html+Css</p>
+                        <a href="javascript:;">Go on!</a>
+                    </div>
+
+                    <div class="m-right">
+                        <a href="javascript:;"><img src="images/mz3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="welcome">
+                <div class="weMod clearFix ">
+                    <div class="m-left">
+                        <p>ssssss</p>
+                        <a href="javascript:;">Go on!</a>
+                    </div>
+
+                    <div class="m-right">
+                        <a href="javascript:;"><img src="images/mz4.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a class="last" id="last" href="javascript:;"></a>
+            <a class="next" id="next" href="javascript:;"></a>
+        </div>
+        <div class="m-welcomeUl">
+            <ul id="welcomeUl" class="welcomeUl clearFix">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+        <!-- Exhibition module -->
+        <div class="enMod"  id="enMod">
+            <ul class="m-list clearFix" id="m-j-hook">
+                <li class="fist" id="pic1">  <!-- Product picture -->   
+                    <a href="javascript.html#m-magnifier" class="m-pic"><img src="images/fdj.jpg" alt=""></a>
+                    <h3><a href="javascript.html#m-magnifier">放大镜</a></h3>
+                    <p>
+                        用两张一大一小的同一张图片，根据小图片选取区中心点到页面的距离比上小图片选取区到小图片最大的宽度等于大图片比上大图片到父级的最大宽度进行等比缩放；
+                    </p>
+                </li>
+                <li id="pic2">
+                    <a href="javascript.html#m-photoWall" class="m-pic"><img src="images/zpq.jpg" alt=""></a>
+                    <h3><a href="javascript.html#m-photoWall">照片墙</a></h3>
+                    <p>
+                         图片的位置根据鼠标的位置进行移动；在求出元素与相邻元素最近的那个进行换位；
+                    </p>
+                </li>
+                <li  id="pic3">
+                    <a href="javascript.html#m-hook" class="m-pic"><img src="images/lg.jpg" alt=""></a>
+                    <h3><a href="javascript.html#m-hook">拉钩效果</a></h3>
+                    <p>
+                        每个元素里都有一个隐藏元素，隐藏元素的位置跟随鼠标的移动位置展现出来
+                    </p>
+                </li>
+                <li id="pic4">
+                    <a href="javascript.html#m-lazyload" class="m-pic"><img src="images/ljz.jpg" alt=""></a>
+                    <h3><a href="javascript.html#m-lazyload">图片延迟加载</a></h3>
+                    <p>
+                        每张图片的高度与滚动高度做比较；大于展示，小于则不加载；
+                    </p>
+                </li>
+            </ul>
+        </div>
+   		
+        <!-- Narrative list -->
+        <div class="neList" id="neList">
+        	<ul class="m-nelist clearFix">
+                    <li class="m-neleft">
+                	   <h3><a href="htmlcss.html">Html/Css</a></h3>
+                        <p>静态页面</p>
+                        <a href="htmlcss.html"><img src="images/jh1.jpg"/></a>
+                        <ul>
+                            <li><a href="StaticPage/jd/index.html">京东</a></li>
+                            <li><a href="StaticPage/qc/index.html">汽车</a></li>
+                            <li><a href="StaticPage/iqiyi/index.html">爱奇艺</a></li>
+                            <li><a href="StaticPage/guokr.html">果壳</a></li>
+                            <li><a href="StaticPage/juhs.html">聚划算</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="m-necenter" id="javascript">
+                        <h3><a href="javascript.html">javascript</a></h3>
+                        <p>一些常见的js效果</p>
+                        <ul>
+                            <li  class="fist"><a href="javascript.html#sescroll">无缝滚动</a></li>
+                            <li><a href="javascript.html#select">模拟邮箱全选全不选</a></li>
+                            <li><a href="javascript.html#round">圆的运动</a></li>
+                            <li><a href="waterfallFlow.html">瀑布流</a></li>
+                            <li><a href="lottery.html">双色球</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="m-neright">
+                    	   <h3><a href="h5css3.html">Html5/Css3</a></h3>
+                        <p>Htmlt+Css3的一些特效</p>
+                        <ul class="m-ne-r-list">
+                            <li class="fist clearFix">
+                        	<div class="m-le">
+                                    <a href="h5css3.html#m-hook">
+                                        <img src="images/fy.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="m-r">
+                                	<a href="h5css3.html#m-hook" id="m-hook">翻页特效</a>
+                                	<p>模拟看书翻页的效果</p>
+                                </div>
+                            </li>
+                        
+                            <li  class="clearFix">
+                                <div class="m-le">
+                                    <a href="h5css3.html#m-hook">
+                                        <img src="images/mtl.jpg"/>
+                                    </a>
+                                </div>
+                
+                                <div class="m-r">
+                                	<a href="h5css3.html#m-ring">3D图片环</a>
+                                	<p>像陀螺一样的效果</p>
+                                </div>
+                            </li>
+                        
+                            <li  class="clearFix">
+                                <div class="m-le">
+                                    <a href="h5css3.html#m-hook">
+                                        <img src="images/fkkl.jpg"/>
+                                    </a>
+                                </div>
+                        	
+                                <div class="m-r">
+                                	<a href="h5css3.html#m-3dparticle">3D颗粒反转</a>
+                                	<p>分割成一块一块的看</p>
+                                </div>
+                            </li>     
+                         </ul>
+                    </li>
+                
+            </ul>
+        </div>
+    
+   </section>
+    <!--section end-->
+    
+    <footer> 
+        <div class="m-footer" id="footer">    
+        <!-- Description module -->
+            <div class="deMod clearFix">
+                <div class="m-d-left">
+                    <h3>常见的效果</h3>
+                    <ul>
+                        <li><a href="javascript2.html#calendar">日历</a></li>
+                        <li><a href="javascript2.html#splitCircle">分割圆</a></li>
+                        <li><a href="player.html">播放器</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript2.html#countdown">倒计时</a></li>
+                        <li><a href="javascript:;">运动形式</a></li>
+                        <li><a href="javascript:;">tab切换</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="appleMenu.html">苹果菜单中心放大</a></li>
+                        <li><a href="h5css3.html#screensaver">canvas屏保</a></li>
+                        <li><a href="h5css3.html">旋转的矩形</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">弹性运动</a></li>
+                        <li><a href="javascript:;">重力加速度</a></li>
+                        <li><a href="h5css3.html#m-blast">爆炸</a></li>
+                    </ul>
+                </div>
+
+                <div class="m-d-right">
+                    <h3>Canvas 时钟</h3>
+                    <canvas class="clock" id="m-j-clock"></canvas>
+                </div>
+            </div>
+
+            <p class="copyright">一些错误的行为掩盖了我是一个好人的本质······</p>
+        </div>
+    </footer>
+
+    
 </body>
 </html>
