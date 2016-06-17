@@ -9,9 +9,9 @@
 <link href="css/base.css" rel="stylesheet">
 <style>
     /* <!--head--> */    
-    .m-c-header{ height:155px;  background: url(img/2.jpg);}
+    .m-c-header{ height:155px;  background: url(css/img/2.jpg);}
     .header{width: 1200px; margin: 0 auto; padding-top:33px;  border-bottom:2px solid #3e484a; background: url(img/2.jpg);}
-    h1{ float: left; width: 260px; height:120px; background: url(img/logo.png) no-repeat; 
+    h1{ float: left; width: 260px; height:120px; background: url(css/img/logo.png) no-repeat;
             text-indent:-99999px;  }
     nav{ float:right; width:840px; height:120px;}
     nav a{ display:block; float:left;  width:148px; height:60px;  margin:30px 10px; text-align:center;
@@ -339,7 +339,7 @@
             var oC=document.getElementById('c1');
             var gd=oC.getContext('2d'); //画笔
             var winW=document.documentElement.clientWidth;
-            var winH=document.documentElement.clientHeight;
+            var winH=600;
 
             oC.width=winW;
             oC.height=winH;
@@ -475,11 +475,11 @@
             function doMove2(){
                 timer=setInterval(function(){
                     iSpeedY+=3;
-
+                    var H=600;
                     var l=oDiv.offsetLeft+iSpeedX;
                     var t=oDiv.offsetTop+iSpeedY;
-                    if(t>=document.documentElement.clientHeight-oDiv.offsetHeight){
-                        t=document.documentElement.clientHeight-oDiv.offsetHeight;
+                    if(t>=H-oDiv.offsetHeight){
+                        t=H-oDiv.offsetHeight;
                         iSpeedY*=-0.8;
                         iSpeedX*=0.8;
                     }
@@ -504,7 +504,7 @@
                     if(Math.abs(iSpeedX)<1)iSpeedX=0;
                     if(Math.abs(iSpeedY)<1)iSpeedY=0;
 
-                    if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight){
+                    if(iSpeedX==0 && iSpeedY==0 && t==H-oDiv.offsetHeight){
                         clearInterval(timer);
                     }
                 },30);
