@@ -8,7 +8,7 @@
      /* <!--head--> */
     
     .m-c-header{ height:155px;  background: url(img/2.jpg);}
-    .header{width: 1200px; margin: 0 auto; padding-top:33px;  border-bottom:2px solid #3e484a; background: url(img/2.jpg);}
+    .header{width: 1200px; min-width: 1200px; margin: 0 auto; padding-top:33px;  border-bottom:2px solid #3e484a; background: url(img/2.jpg);}
     h1{ float: left; width: 260px; height:120px; background: url(img/logo.png) no-repeat; 
             text-indent:-99999px;  }
     nav{ float:right; width:840px; height:120px;}
@@ -18,8 +18,9 @@
 
     a:hover{  color: #f00; } 
           /* <!-- Welcome module --> */
-    .m-welcome{ position: relative;  height: 440px; overflow: hidden;}
-    .welcome{width: 100%; height: 440px; 
+    section{ min-width: 1200px; }
+    .m-welcome{ position: relative;  height: 440px; overflow: hidden; }
+    .welcome{width: 100%; height: 440px; min-width: 1200px;
             position: absolute; top:0; left: 0; opacity: 0;transition:1s all ease;} 
     .firstBack{background: url(img/b0.jpg); }
     .weMod{ width:1200px; height: 440px;  margin: 0 auto; border-bottom:2px solid #51575a; }
@@ -40,7 +41,7 @@
     
     
     .welcome.on{ opacity: 1; }
-    .m-welcomeUl{ background: #999;}
+    .m-welcomeUl{ background: #999; }
     .welcomeUl .on{ background: #f00;}
     .welcomeUl{ height: 50px;  width: 200px; margin:0 auto; }
     .welcomeUl li{ float: left; margin: 10px; width: 30px; height: 30px; background: #ccc;
@@ -59,7 +60,7 @@
     }
     
     
-    .enMod{ background: url(img/4.jpg); height:385px; -overflow: hidden;}
+    .enMod{ background: url(img/4.jpg); height:385px; -overflow: hidden; }
     .m-list{width:1200px; margin:0 auto;background: url(img/4.jpg);  transform:translate(0,400px);opacity:0;  animation-duration:0.4s;
                 animation-delay:0.4s; }
     .m-list li{ width:285px; height:385px; float:left; margin-left:20px; position: relative; 
@@ -73,7 +74,7 @@
                 background: rgba(255,0,0,0.4); z-index: 1;}
 
          /* <!-- Narrative list --> */
-    .neList{ background:url(img/xx.png); }
+    .neList{ background:url(img/xx.png); min-width: 1200px;}
     .m-nelist{ width:1200px; height:580px; margin:0 auto;background:url(img/xx.png); transform:translate(-1200px,0);animation-duration:0.4s;
                 animation-delay:0.4s; }
     .m-nelist>li{ width:324px; height:440px; float:left; margin-top:40px; margin-left:20px; box-shadow:2px 2px 5px #faf59c; padding: 40px 31px 0; background: #fff;}
@@ -98,6 +99,7 @@
     .m-ne-r-list .m-r p{margin: 0; font-size: 14px; }
 
       /* <!-- Description module -->*/
+    footer{min-width: 1200px;}
     .m-footer{ background:url(img/3.jpg);}
     .deMod{ width: 1200px; height: 310px; border-bottom: 1px solid #b5bec3; margin: 0 auto; background:url(img/3.jpg);}
     .deMod h3{ height: 20px; line-height: 20px; font-size: 18px; font-weight: bold; margin-top: 50px;}
